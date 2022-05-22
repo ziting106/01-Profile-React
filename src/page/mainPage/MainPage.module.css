@@ -1,0 +1,10 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.myPicture{
+
+    width: 30%;
+    position: absolute;
+    right: 10%;
+}
