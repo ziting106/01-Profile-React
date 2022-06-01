@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myPicture{
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    transition:all 1s;
+
+    
+}
+.logo{
+    width: 50px;
+}
+.myPicture2{
+    display: none;
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    top: 10px;
+    transition: all 1s;
+
+}
+.picture:hover .myPicture2{
+    display: block;
+    transition: all 1s;
+
+}
+.picture:hover .myPicture{
+    display: none;
+    transition: 1s;
+}
