@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    display: flex;
+    align-items: center;   
+    white-space:nowrap;
+}
+.name{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: var(--heading3);
+    color: var(--yellow1);
+}
+.item a{
+    padding: 0px 10px;
+    /* transition: .5s; */
+}
+.item a:hover, item a:active{
+    border-bottom: 3px solid var(--yellow2);
+}
+.itemactive{
+    margin: 0px 30px;
+    font-weight: bold;
+    border-bottom: 3px solid var(--yellow2);
+}

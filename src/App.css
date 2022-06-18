@@ -1,11 +1,37 @@
 *{
   margin: 0px;
   padding: 0px;
+  background-image: url(../public/img/h-bckground.png);
+}
+:root{
+  /* 色票 */
+  --green1:#687316;
+  --green2:#BABF29;
+  --green3:#F0F2A6;
+  --yellow1:#BF5E26;
+  --yellow2:#F2B545;
 
+  /* 字體大小 */
+  --heading1: 56px;
+  --heading2: 48px;
+  --heading3: 32px;
+  --heading4: 20px;
+  --heading5: 16px;
+  --heading6: 12px;
+  --heading7: 10px;
+  --heading8: 8px;
+  /* 圓角 */
+  --desk-border-radius:15px;
+  /* 網頁版border寬度 */
+  --border:2px solid var(--brown2);
+  --pageBorder:40px;
+  --holdpadding:50px;
 }
 a{
   text-decoration:none;
+  font-size: var(--heading4);
+  color: #333333;
 }
 .App {
-  margin: 20px;
+  margin: 30px 100px;
 }
