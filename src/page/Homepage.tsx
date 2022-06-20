@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "../css/Homepage.module.css";
-import LazyLinePainter from "lazy-line-painter";
 import { BsArrowDown } from "react-icons/bs";
 
 function MainPage() {
@@ -8,16 +7,16 @@ function MainPage() {
   // let config = { strokeWidth: 10 };
   // let myAnimation = new LazyLinePainter(el, config);
   // myAnimation.paint();
-  const [typebar, setNavbar] = useState(false);
+  // const [typebar, setNavbar] = useState(false);
 
-  const displayItemType = () => {
-    if (window.scrollY >= 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-  window.addEventListener("scroll", displayItemType);
+  // const displayItemType = () => {
+  //   if (window.scrollY >= 80) {
+  //     setNavbar(true);
+  //   } else {
+  //     setNavbar(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", displayItemType);
 
   return (
     <div>
@@ -25,14 +24,14 @@ function MainPage() {
         <nav>
           <div className={style.logoName}>
             <img src={`https://bibiya.tw/img/appleLogo.gif`} />
-            <a href="">Angelica Liu</a>
+            <a href="/">Angelica Liu</a>
           </div>
           <div className={style.item}>
-            <a className={style.itemactive} href="">
+            <a className={style.itemactive} href="/">
               設計專案
             </a>
             {/* <a href="">繪畫</a> */}
-            <a href="">關於我</a>
+            <a href="/">關於我</a>
             <a href="https://www.cakeresume.com/s--D2KiLan6MGxtg3JIPfRrAA--/bibiya">
               履歷
             </a>
@@ -49,7 +48,7 @@ function MainPage() {
       </header>
 
       <div className={style.charming}>
-        <a href="">
+        <a href="/">
           <p>01 - Charming 柴米網</p>
           <p>2022/01 - 2022/06</p>
           <p>
@@ -58,7 +57,7 @@ function MainPage() {
             並且讓所有創作者可以在平台上與其他的會員交流意見、觀看彼此的作品集，並會由官方提供最新的設計資訊給所有的網站用戶。
           </p>
         </a>
-        <a href="" className={style.introduceImg}>
+        <a href="/" className={style.introduceImg}>
           <div>
             <img
               src={`https://bibiya.tw/img/2022-homepage/web/mainpage.png`}
@@ -104,14 +103,14 @@ function MainPage() {
         </a>
       </div>
       <div className={style.if}>
-        <a href="">
+        <a href="/">
           <p>02 - Self-Reliance 難民自立救助APP</p>
           <p>2017/01 - 2017/06</p>
           <p>
             促進難民與當地社會的連結，讓他們能夠藉由短期的工作或成為志工，來獲取在地人民的認同感，並有更多機會與他們成為朋友，進而減少人民對難民的恐懼與偏見。而難民也能因此獲得報酬，立即得解決當前遇到的生活困難，最終達到預防犯罪的效果。
           </p>
         </a>
-        <a href="" className={style.ifImg}>
+        <a href="/" className={style.ifImg}>
           <div>
             <img
               src={`https://bibiya.tw/img/2022-homepage/self-reliance.png`}
@@ -129,7 +128,7 @@ function MainPage() {
         </a>
       </div>
       <div className={style.momBaby}>
-        <a href="">
+        <a href="/">
           <p>03 - Mom＆Baby 嬰兒護理床邊床</p>
           <p>2017/12 - 2018/06</p>
           <p>
@@ -139,7 +138,7 @@ function MainPage() {
             換尿布的護理台、搖床和床邊床做結合， 使媽媽照顧寶寶時更方便優雅。
           </p>
         </a>
-        <a href="" className={style.momBabyImg}>
+        <a href="/" className={style.momBabyImg}>
           <div>
             <img
               src={`https://bibiya.tw/img/2022-homepage/Mom&Baby.jpg`}
@@ -148,6 +147,7 @@ function MainPage() {
           </div>
           <div>
             <iframe
+              title="Mom & Baby"
               src="https://www.youtube.com/embed/TNYtCwUVT6Q"
               allowFullScreen
             ></iframe>
