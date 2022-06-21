@@ -1,0 +1,30 @@
+.navBar nav .logoName, .navBar nav {
+  display: flex;
+  align-items: center;
+}
+
+.navBar nav {
+  justify-content: space-between;
+}
+.navBar nav .logoName img {
+  width: 50px;
+  white-space: nowrap;
+}
+.navBar nav .logoName a {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: var(--heading3);
+  color: var(--yellow1);
+}
+.navBar nav .item .itemactive {
+  margin: 0px 30px;
+  font-weight: bold;
+  border-bottom: 3px solid var(--yellow2);
+}
+.navBar nav .item a {
+  padding: 0px 10px;
+  transition: 0.5s;
+}
+.navBar nav .item a:hover {
+  border-bottom: 3px solid var(--yellow2);
+}

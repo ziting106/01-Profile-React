@@ -1,0 +1,105 @@
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slidein2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes slidein2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.aboutMe {
+  margin: 100px 200px;
+  height: 1000px;
+  transition: 0.5s;
+}
+.aboutMe .myPicture {
+  background: url(../../public/img/myPicture2.gif) no-repeat right;
+  background-size: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.aboutMe .myPicture p {
+  font-size: var(--heading2);
+  color: var(--green1);
+}
+.aboutMe .myPicture p:first-child {
+  font-size: var(--heading3);
+  color: var(--gray2);
+  box-shadow: none;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.aboutMe .myPicture p:nth-child(2) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  line-height: 70px;
+}
+.aboutMe .myPicture p:nth-child(3) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+.aboutMe .myPicture p:nth-child(4) {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutMe {
+    margin: 100px 0px;
+    height: 1000px;
+  }
+}

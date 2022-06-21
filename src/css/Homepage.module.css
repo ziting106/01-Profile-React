@@ -1,5 +1,6 @@
+
 @charset "UTF-8";
-.momBaby .momBabyImg, .if .ifImg, .charming .introduceImg, .mainpage-header hgroup, .mainpage-header nav .logoName, .mainpage-header nav {
+.momBaby .momBabyImg, .if .ifImg, .charming .introduceImg, .mainpage-header hgroup {
   display: flex;
   align-items: center;
 }
@@ -28,31 +29,6 @@
 /*  */
 .mainpage-header {
   height: 100%;
-}
-.mainpage-header nav {
-  justify-content: space-between;
-}
-.mainpage-header nav .logoName img {
-  width: 50px;
-  white-space: nowrap;
-}
-.mainpage-header nav .logoName a {
-  font-weight: bold;
-  padding-left: 10px;
-  font-size: var(--heading3);
-  color: var(--yellow1);
-}
-.mainpage-header nav .item .itemactive {
-  margin: 0px 30px;
-  font-weight: bold;
-  border-bottom: 3px solid var(--yellow2);
-}
-.mainpage-header nav .item a {
-  padding: 0px 10px;
-  transition: 0.5s;
-}
-.mainpage-header nav .item a:hover {
-  border-bottom: 3px solid var(--yellow2);
 }
 .mainpage-header hgroup {
   flex-direction: column;

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../css/Homepage.module.css";
 import { BsArrowDown } from "react-icons/bs";
-
+let page = "Homepage";
 function MainPage() {
   // let el = document.querySelector("#bibiya");
   // let config = { strokeWidth: 10 };
@@ -21,23 +21,6 @@ function MainPage() {
   return (
     <div>
       <header className={style["mainpage-header"]}>
-        <nav>
-          <div className={style.logoName}>
-            <img src={`https://bibiya.tw/img/appleLogo.gif`} />
-            <a href="/">Angelica Liu</a>
-          </div>
-          <div className={style.item}>
-            <a className={style.itemactive} href="/">
-              設計專案
-            </a>
-            {/* <a href="">繪畫</a> */}
-            <a href="/">關於我</a>
-            <a href="https://www.cakeresume.com/s--D2KiLan6MGxtg3JIPfRrAA--/bibiya">
-              履歷
-            </a>
-          </div>
-        </nav>
-
         <hgroup>
           <p>歡迎參觀我的作品集</p>
           <p>&#x1F44B; Hi! 我是劉芷廷</p>
@@ -60,42 +43,42 @@ function MainPage() {
         <a href="/" className={style.introduceImg}>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/web/mainpage.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/web/mainpage.jpg`}
               alt=""
             />
             <p>首頁</p>
           </div>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/web/mainpage_product.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/web/mainpage_product.jpg`}
               alt=""
             />
             <p>商品首頁</p>
           </div>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/web/productdetail.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/web/productdetail.jpg`}
               alt=""
             />
             <p>商品詳細頁</p>
           </div>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/web/cart1.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/web/cart1.jpg`}
               alt=""
             />
             <p>購物流程一：開始結帳</p>
           </div>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/web/cart2.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/web/cart2.jpg`}
               alt=""
             />
             <p>購物流程二：確認訂單</p>
           </div>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/web/mySell_product.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/web/mySell_product.jpg`}
               alt=""
             />
             <p>賣家中心</p>
@@ -113,14 +96,14 @@ function MainPage() {
         <a href="/" className={style.ifImg}>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/self-reliance.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/self-reliance.jpg`}
               alt=""
             />
             <p>概念設計表版</p>
           </div>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/design-talent-award.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/design-talent-award.jpg`}
               alt=""
             />
             <p>IF Design Talent Award</p>
@@ -141,7 +124,7 @@ function MainPage() {
         <a href="/" className={style.momBabyImg}>
           <div>
             <img
-              src={`https://bibiya.tw/img/2022-homepage/Mom&Baby.jpg`}
+              src={`http://localhost:3000/img/2022-homepage/Mom&Baby.jpg`}
               alt=""
             />
           </div>

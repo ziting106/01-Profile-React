@@ -1,0 +1,38 @@
+%flex{
+    display: flex;
+    align-items: center; 
+}
+
+.navBar{
+    nav{
+    @extend %flex;
+    justify-content: space-between;
+    .logoName{
+        @extend %flex;  
+        img{
+            width: 50px; 
+            white-space:nowrap;
+        }
+        a{
+            font-weight: bold;
+            padding-left: 10px;
+            font-size: var(--heading3);
+            color: var(--yellow1);
+        }
+    }
+    .item{
+        .itemactive{
+            margin: 0px 30px;
+            font-weight: bold;
+            border-bottom: 3px solid var(--yellow2);
+        }
+        a{
+            padding: 0px 10px;
+            transition: .5s;
+        }
+        a:hover{
+            border-bottom: 3px solid var(--yellow2);
+        }
+    }
+}
+}
