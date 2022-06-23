@@ -8,6 +8,7 @@
 }
 body{
   background-image: url(../public/img/h-bckground.png);
+  background-repeat: no-repeat;
   font-family: huninn;
   background-attachment:fixed
 }
@@ -25,7 +26,7 @@ body{
   --heading1: 56px;
   --heading2: 48px;
   --heading3: 32px;
-  --heading4: 20px;
+  --heading4: 24px;
   --heading5: 16px;
   --heading6: 12px;
   --heading7: 10px;

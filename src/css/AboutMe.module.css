@@ -23,6 +23,7 @@
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 @keyframes slidein2 {
@@ -34,27 +35,32 @@
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 .aboutMe {
-  margin: 100px 200px;
   height: 1000px;
   transition: 0.5s;
 }
-.aboutMe .myPicture {
+.aboutMe img {
+  width: 50%;
+  border-radius: 15px;
+}
+
+.myPicture {
+  margin: 0px 250px 100px 250px;
   background: url(../../public/img/myPicture2.gif) no-repeat right;
   background-size: 300px;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
 }
-.aboutMe .myPicture p {
+.myPicture p {
   font-size: var(--heading2);
   color: var(--green1);
 }
-.aboutMe .myPicture p:first-child {
+.myPicture p:first-child {
   font-size: var(--heading3);
   color: var(--gray2);
   box-shadow: none;
@@ -65,28 +71,28 @@
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.aboutMe .myPicture p:nth-child(2) {
+.myPicture p:nth-child(2) {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   line-height: 70px;
 }
-.aboutMe .myPicture p:nth-child(3) {
+.myPicture p:nth-child(3) {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-name: slidein;
           animation-name: slidein;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.aboutMe .myPicture p:nth-child(4) {
+.myPicture p:nth-child(4) {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-delay: 3s;
@@ -95,6 +101,16 @@
           animation-name: slidein;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.mypic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 40px;
+  margin-top: 50px;
+  font-size: var(--heading4);
+  color: var(--gray1);
 }
 
 @media screen and (max-width: 1024px) {

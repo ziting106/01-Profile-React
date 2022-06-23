@@ -1,5 +1,40 @@
-
 @charset "UTF-8";
+@-webkit-keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideinUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes slideinUp {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 .momBaby .momBabyImg, .if .ifImg, .charming .introduceImg, .mainpage-header hgroup {
   display: flex;
   align-items: center;
@@ -26,11 +61,16 @@
   transition: 0.5s;
 }
 
-/*  */
 .mainpage-header {
   height: 100%;
 }
 .mainpage-header hgroup {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   flex-direction: column;
   margin-top: 20%;
 }
@@ -57,6 +97,19 @@
 }
 .mainpage-header hgroup .icon:hover {
   color: var(--gray1);
+}
+
+.slideinUP {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: slideinUp;
+          animation-name: slideinUp;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.noneSlide {
+  opacity: 0;
 }
 
 .charming {

@@ -4,6 +4,11 @@
 }
 
 .navBar{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding: 10px 0px;
     nav{
     @extend %flex;
     justify-content: space-between;
@@ -34,5 +39,6 @@
             border-bottom: 3px solid var(--yellow2);
         }
     }
+
 }
 }

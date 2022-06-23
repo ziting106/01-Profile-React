@@ -1,3 +1,23 @@
+@keyframes slidein {
+    0% {
+        opacity: 0;
+        }
+
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideinUp{
+    from {
+        opacity: 0;
+        transform: translateY(50%); 
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+}
 %flex{
     display: flex;
     align-items: center; 
@@ -23,6 +43,9 @@
 .mainpage-header{
     height: 100%;
     hgroup{
+        animation-duration: 1s;
+        animation-name: slidein;
+        animation-fill-mode:both;
         @extend %flex;
         flex-direction: column;
         margin-top: 20%;
@@ -52,14 +75,25 @@
         }
     }
 }
+.slideinUP{
+    animation-duration: 2s;
+    animation-name: slideinUp;
+    animation-fill-mode:both;  
+}
+.noneSlide{
+    opacity: 0;
+}
 .charming{
     margin: 100px 0px;
+  
+    
     p{
         @extend %text;
     }
     p:first-child{
         @extend %header;
         color: #795252;
+        
     }
     /* 圖片外圍最大div */
     .introduceImg{
