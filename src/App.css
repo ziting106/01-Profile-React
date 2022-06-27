@@ -27,7 +27,7 @@ body{
   --heading2: 48px;
   --heading3: 32px;
   --heading4: 24px;
-  --heading5: 16px;
+  --heading5: 18px;
   --heading6: 12px;
   --heading7: 10px;
   --heading8: 8px;
@@ -40,15 +40,20 @@ body{
 }
 a{
   text-decoration:none;
-  font-size: var(--heading4);
-  color: #333333;
+ 
 }
-.App {
+.App{
   margin: 30px 100px;
 }
 
+
 @media screen and (max-width: 1000px) {
   .App {
-    margin: 30px 30px;
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .App{
+    margin: 15px;
   }
 }

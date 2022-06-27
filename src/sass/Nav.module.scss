@@ -12,33 +12,70 @@
     nav{
     @extend %flex;
     justify-content: space-between;
-    .logoName{
-        @extend %flex;  
-        img{
-            width: 50px; 
-            white-space:nowrap;
-        }
-        a{
-            font-weight: bold;
-            padding-left: 10px;
-            font-size: var(--heading3);
-            color: var(--yellow1);
-        }
-    }
-    .item{
-        .itemactive{
-            margin: 0px 30px;
-            font-weight: bold;
-            border-bottom: 3px solid var(--yellow2);
-        }
-        a{
-            padding: 0px 10px;
-            transition: .5s;
-        }
-        a:hover{
-            border-bottom: 3px solid var(--yellow2);
-        }
-    }
-
+    margin: 0px 100px;
 }
+.logoName{
+    @extend %flex;  
+    img{
+        width: 50px; 
+        white-space:nowrap;
+    }
+    a{
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: var(--heading3);
+        color: var(--yellow1);
+    }
+}
+.item{
+    .itemactive{
+        margin: 0px 30px;
+        font-weight: bold;
+        border-bottom: 3px solid var(--yellow2);
+    }
+    a{
+        padding: 0px 10px;
+        transition: .5s;
+        font-size: var(--heading4);
+        color: #333333;
+    }
+    a:hover{
+        border-bottom: 3px solid var(--yellow2);
+    }
+}
+}
+@media screen and (max-width:1024px){
+    .navBar nav{
+        margin: 0px 30px;
+      }
+}
+@media screen and (max-width:780px) {
+    .navBar .logoName{
+        a{
+            font-size: var(--heading3);
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .navBar .logoName{
+        a{
+            font-size: var(--heading5);
+        }
+    }
+    .navBar .item .itemactive{
+        margin: 0px;
+    }
+    .navBar .item a {
+        padding: 0px 10px;
+        transition: 0.5s;
+        font-size: var(--heading5);
+        color: #333333;
+      }
+      .navBar .logoName img {
+        width: 30px;
+      }
+      .navBar nav{
+        margin: 0px 15px;
+      }
 }

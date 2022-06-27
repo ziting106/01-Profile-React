@@ -35,12 +35,6 @@ function Nav() {
           >
             關於我
           </Link>
-          <Link
-            to={`/resume`}
-            className={pageName == "/resume" ? `${style.itemactive}` : ""}
-          >
-            履歷
-          </Link>
         </div>
       </nav>
     </div>

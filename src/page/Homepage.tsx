@@ -2,8 +2,7 @@ import React from "react";
 import { useState } from "react";
 import style from "../css/Homepage.module.css";
 import { BsArrowDown } from "react-icons/bs";
-let page = "Homepage";
-
+import "aos/dist/aos.css";
 // const navbar = document.getElementById("navbar");
 // const sticky = navbar.offsetTop;
 
@@ -19,7 +18,7 @@ function MainPage() {
   const [typebar, slideinUp] = useState(false);
 
   const displayItemType = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 20) {
       slideinUp(true);
     } else {
       slideinUp(false);
@@ -37,7 +36,7 @@ function MainPage() {
   const [typebar2, slideinUp2] = useState(false);
 
   const displayItemType2 = () => {
-    if (window.scrollY >= 2000) {
+    if (window.scrollY >= 1500) {
       slideinUp2(true);
     } else {
       slideinUp2(false);
@@ -147,7 +146,7 @@ function MainPage() {
       <div className={style.momBaby}>
         <div className={typebar2 ? `${style.slideinUP}` : `${style.noneSlide}`}>
           <a href="/">
-            <p>03 - Mom＆Baby 嬰兒護理床邊床</p>
+            <p>03 - Mom＆Baby 嬰兒床邊床</p>
             <p>2017/12 - 2018/06</p>
             <p>
               新生寶寶特別需要細心照顧，因此我們將三種媽媽最常使用的嬰兒床功能：
@@ -156,19 +155,19 @@ function MainPage() {
               換尿布的護理台、搖床和床邊床做結合， 使媽媽照顧寶寶時更方便優雅。
             </p>
           </a>
-          <a href="/" className={style.momBabyImg}>
-            <div>
+          <a href="/">
+            <div className={style.momBabyImg}>
               <img
                 src={`http://localhost:3000/img/2022-homepage/Mom&Baby.jpg`}
                 alt=""
               />
-            </div>
-            <div>
-              <iframe
-                title="Mom & Baby"
-                src="https://www.youtube.com/embed/TNYtCwUVT6Q"
-                allowFullScreen
-              ></iframe>
+              <div className={style.video}>
+                <iframe
+                  title="Mom & Baby"
+                  src="https://www.youtube.com/embed/TNYtCwUVT6Q"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </a>
         </div>

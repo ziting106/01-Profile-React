@@ -41,7 +41,6 @@
     transition: .5s;
   }
 .mainpage-header{
-    height: 100%;
     hgroup{
         animation-duration: 1s;
         animation-name: slidein;
@@ -76,17 +75,15 @@
     }
 }
 .slideinUP{
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slideinUp;
-    animation-fill-mode:both;  
+    animation-fill-mode: both;  
 }
 .noneSlide{
     opacity: 0;
 }
 .charming{
     margin: 100px 0px;
-  
-    
     p{
         @extend %text;
     }
@@ -96,21 +93,16 @@
         
     }
     /* 圖片外圍最大div */
-    .introduceImg{
-        @extend %flex;
-        justify-content: center;
+    .introduceImg{ 
+        display: flex;
         flex-wrap: wrap;
-        // transform: translate3d(0px,0px,0px);
         > div{
-            text-align: center;
+            width:calc(33% - 10px);
             margin: 0px 5px;
         }
-        > div:last-child{
-            margin-left: 0px;
-        }
         img{
-            width: 425px;
             @extend %img;
+            width: 100%;
         }
     }
 }
@@ -134,15 +126,13 @@
             margin-left: 0px;
         }
         img{
-            width: 98%;
+            width: 100%;
             @extend %img;
-            margin:0px 20px;
         }
     }
    
 }
 .momBaby{
-    margin: 100px 0px;
     p{
         @extend %text;
     }
@@ -151,16 +141,29 @@
         color: var(--gray2);
     }
     .momBabyImg{
-        @extend %flex;
-        iframe{
-            width: 700px;
-            height: 430px;
-            @extend %img;
-            margin-left: 20px;
-            border: none;
+        display: flex;  
+        align-items: center;
+        justify-content: space-between;
+        .video{
+            position: relative;
+            width: 50%;
+            height: 0;
+            padding-bottom: 28%;
+            
+            iframe{
+                margin: 0px 10px;
+                @extend %img;
+                border: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
         }
+        
         img{
-            width: 100%;
+            width: 50%;
             @extend %img;
         }
     }
@@ -168,21 +171,66 @@
 
 }
 @media screen and (max-width:1024px){
-   
+    %header{
+        font-size: var(--heading3);
+        text-align: center;
+        line-height: 50px;
+        padding-bottom: 0px;
+      }
 }
 @media screen and (max-width:780px) {
     .charming{
-        img{
-            width: 400px;
-        }
+        margin: 0px;
     }
+    .charming .introduceImg > div {
+        width: calc(50% - 10px);
+      }
+      %text{
+        font-size: var(--heading5);
+        line-height: 30px;
+        color: var(--gray2);
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .mainpage-header hgroup p:first-child {
+        font-size: var(--heading3);
+      }
 }
 @media screen and (max-width:441px){
-    .charming{
-        img{
-            width: 200px;
-        }
+    .mainpage-header hgroup .icon {
+        margin: 50px 0px;
     }
+    .charming .introduceImg > div {
+        width: 100%;
+      }
+    %header{
+        font-size: var(--heading4);
+        text-align: center;
+        line-height: 50px;
+        padding-bottom: 0px;
+      }
+      .if{
+        margin: 0px;
+      }
+      .if .ifImg {
+        display: block;
+      }
+      .momBaby .momBabyImg {
+        display:block;
+      }
+      .momBaby .momBabyImg img {
+        width: 100%;
+      }
+      .momBaby .momBabyImg .video {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 58%;
+      }
+      .momBaby .momBabyImg .video iframe {
+        margin: 0px;
+        margin-top: 20px;
+      }
 }
 
 
