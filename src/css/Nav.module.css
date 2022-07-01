@@ -1,4 +1,4 @@
-.navBar .logoName, .navBar nav {
+.logoName {
   display: flex;
   align-items: center;
 }
@@ -10,34 +10,51 @@
   background-color: #fff;
   z-index: 2;
   padding: 10px 0px;
+  box-shadow: 0px 0px 10px var(--gray1);
+  transition: 1s;
 }
-.navBar nav {
-  justify-content: space-between;
-  margin: 0px 100px;
+
+.charming {
+  position: relative;
+  background-color: var(--charming);
 }
-.navBar .logoName img {
+
+.if {
+  background-color: var(--if);
+}
+
+.momBaby {
+  background-color: var(--gray2);
+}
+
+.logoName img {
   width: 50px;
   white-space: nowrap;
 }
-.navBar .logoName a {
+.logoName a {
   font-weight: bold;
   padding-left: 10px;
   font-size: var(--heading3);
   color: var(--yellow1);
 }
-.navBar .item .itemactive {
+
+.item .itemactive {
   margin: 0px 30px;
   font-weight: bold;
   border-bottom: 3px solid var(--yellow2);
 }
-.navBar .item a {
+.item a {
   padding: 0px 10px;
   transition: 0.5s;
   font-size: var(--heading4);
   color: #333333;
 }
-.navBar .item a:hover {
+.item a:hover {
   border-bottom: 3px solid var(--yellow2);
+}
+
+.charmingColor a {
+  color: var(--brown2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -63,7 +80,6 @@
     padding: 0px 10px;
     transition: 0.5s;
     font-size: var(--heading5);
-    color: #333333;
   }
 
   .navBar .logoName img {
@@ -72,5 +88,10 @@
 
   .navBar nav {
     margin: 0px 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .navBar .item a {
+    font-size: var(--heading6);
   }
 }

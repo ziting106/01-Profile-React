@@ -1,0 +1,33 @@
+
+.charming{
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.project{
+    display: flex;
+    color: var(--brown2);
+    font-size: var(--heading5);
+    position:absolute;
+    top: 100px;
+    right: 0px;
+    h1{
+        font-size: var(--heading5);
+        font-weight: bold;
+    }
+    p{
+        margin-right: 70px;
+    }
+}
+// page1--challenge
+.challenge{
+    display: flex;
+    justify-content: center;
+    font-size: var();
+    line-height: 30px;
+    > div{
+        margin: 30px 50px;
+        width: 40%;
+    }
+}

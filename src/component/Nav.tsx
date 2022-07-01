@@ -5,23 +5,34 @@ import style from "../css/Nav.module.css";
 
 import AboutMe from "../page/AboutMe";
 
-// document.querySelector("#apple").onclick = () => {
-//   scrollTo(0, 0);
-// };
-// 抓到瀏覽器路徑來讓navBar的項目在被點擊後更換style
 function Nav() {
-  // let pageURL = new URL("https://bibiya.com/about");
   const location = useLocation();
   let pageName = location.pathname;
-  // alert(pageName);
   return (
-    <div id="apple" className={style.navBar}>
+    <div
+      id="apple"
+      className={
+        pageName == "/charming"
+          ? `${style.navBar} ${style.charming}`
+          : `${style.navBar}` && pageName == "/self-reliance"
+          ? `${style.navBar} ${style.if}`
+          : `${style.navBar}` && pageName == "/mom&baby"
+          ? `${style.navBar} ${style.momBaby}`
+          : `${style.navBar}`
+      }
+    >
       <nav>
         <div className={style.logoName}>
-          <img src={`http://localhost:3000/img/appleLogo.gif`} />
-          <Link to={`/`}>Angelica Liu</Link>
+          <img src={`https://bibiya.tw/img/appleLogo.gif`} />
+          <a href="/">Angelica Liu</a>
         </div>
-        <div className={style.item}>
+        <div
+          className={
+            pageName == "/charming"
+              ? `${style.item} ${style.charmingColor}`
+              : `${style.item}`
+          }
+        >
           <Link
             to={`/`}
             className={pageName == "/" ? `${style.itemactive}` : ""}

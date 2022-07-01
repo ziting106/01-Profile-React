@@ -2,9 +2,16 @@
   margin: 0px;
   padding: 0px;
 }
+nav{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  margin: 0px 100px; 
+}
 @font-face {
   font-family: huninn;
   src: url(./font/jf-openhuninn-1.1.ttf);
+  font-display: swap;
 }
 body{
   background-image: url(../public/img/h-bckground.png);
@@ -21,7 +28,12 @@ body{
   --yellow2:#F2B545;
   --gray1:rgb(83, 83, 83);
   --gray2:rgb(143, 143, 143);
-
+  --charming:#F0EFEB;
+  --brown1: #472929;
+  --brown2: #795252;
+  --brown3: #D6C5C5;
+  --brown4: #F4EFEF;
+  --if:#1A274C;
   /* 字體大小 */
   --heading1: 56px;
   --heading2: 48px;
@@ -42,18 +54,19 @@ a{
   text-decoration:none;
  
 }
-.App{
+section{
+
   margin: 30px 100px;
 }
 
 
 @media screen and (max-width: 1000px) {
-  .App {
+  section {
     margin: 30px;
   }
 }
 @media screen and (max-width: 1000px){
-  .App{
+  section{
     margin: 15px;
   }
 }
