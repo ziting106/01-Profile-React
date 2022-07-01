@@ -15,7 +15,33 @@
         color: #fff;
     }
 }
-
+.charmingFooter{
+    background-color: var(--charming);
+    a{
+        color: var(--brown2);
+    }
+    p{
+        color: var(--brown2);
+    }
+}
+.selfRelianceFooter{
+    background-color: var(--if);
+    a{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+}
+.momBabyFooter{
+    background-color: var(--gray3);
+    a{
+        color: var(--if);
+    }
+    p{
+        color: var(--if);
+    }
+}
 @media screen and (max-width:441px){
     .footer {
         margin-top: 50px;

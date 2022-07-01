@@ -1,10 +1,3 @@
-
-.charming{
-    img{
-        width: 100%;
-        object-fit: contain;
-    }
-}
 .project{
     display: flex;
     color: var(--brown2);
@@ -24,10 +17,59 @@
 .challenge{
     display: flex;
     justify-content: center;
-    font-size: var();
-    line-height: 30px;
+    font-size: var(--heading5);
+    line-height: 40px;
+    margin:100px 0px;
     > div{
-        margin: 30px 50px;
+        margin: 0px 50px;
         width: 40%;
     }
+    > ul{
+        margin: 0px 50px;
+    }
+    h1{
+        color: var(--green1);
+    }
+    li{
+        color: var(--gray2);
+        transition: .3s;
+    }
+    p{
+        color: var(--gray2);
+    }
+    li::before{
+        color: var(--green1);
+        font-weight: bold;
+    }
+    li:hover{
+        color: var(--green1);
+    }
+}
+
+.phoneImg{
+    position: relative;
+    margin-bottom: 10%;
+    div{
+        display: flex;
+        overflow: scroll;
+    }
+    div::-webkit-scrollbar {
+        display: none; /* Chrome Safari */
+    }
+    img{
+        background-color: #fff;
+        width: 20%;
+        padding: 10px;
+        margin: 0px 10px;
+        border: 1px solid var(--gray3);
+        border-radius: 15px;
+    }
+}
+.colorlass{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0) , rgb(0, 0, 0,.2));
 }

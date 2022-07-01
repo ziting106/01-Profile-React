@@ -16,6 +16,36 @@
   color: #fff;
 }
 
+.charmingFooter {
+  background-color: var(--charming);
+}
+.charmingFooter a {
+  color: var(--brown2);
+}
+.charmingFooter p {
+  color: var(--brown2);
+}
+
+.selfRelianceFooter {
+  background-color: var(--if);
+}
+.selfRelianceFooter a {
+  color: #fff;
+}
+.selfRelianceFooter p {
+  color: #fff;
+}
+
+.momBabyFooter {
+  background-color: var(--gray3);
+}
+.momBabyFooter a {
+  color: var(--if);
+}
+.momBabyFooter p {
+  color: var(--if);
+}
+
 @media screen and (max-width: 441px) {
   .footer {
     margin-top: 50px;

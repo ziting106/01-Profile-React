@@ -30,12 +30,46 @@ function Charming() {
               並且讓所有創作者可以在平台上與其他的會員交流意見、觀看彼此的作品集，並會由官方提供最新的設計資訊給所有的網站用戶。
             </p>
           </div>
-          <div>
+          <ul>
             <h1>遇到的挑戰：</h1>
-            <p>1)專案時間掌控</p>
-            <p>1)專案時間掌控</p>
-          </div>
+            <a href="/">
+              <li>團隊間CSS互相影響怎麼辦？</li>
+            </a>
+            <a href="/">
+              <li>資料庫圖片變數讀取不到？</li>
+            </a>
+            <a href="/">
+              <li>如何串接後端API？</li>
+            </a>
+            <a href="/">
+              <li>Deadline快到了完成度還很低怎麼辦？</li>
+            </a>
+          </ul>
         </article>
+      </section>
+      <div className={style.phoneImg}>
+        <div>
+          <img src="http://localhost:3000/img/charming/charming1.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming2.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming3.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming4.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming5.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming6.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming7.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming8.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming9.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming10.png" alt="" />
+          <img src="http://localhost:3000/img/charming/charming11.png" alt="" />
+        </div>
+        <div className={style.colorlass}></div>
+      </div>
+      <section>
+        <div>
+          <img
+            src="http://localhost:3000/img/charming/designFlow.webp"
+            alt=""
+          />
+        </div>
       </section>
     </>
   );

@@ -12,7 +12,7 @@
     box-shadow: 0px 0px 10px  var(--gray1);
     transition: 1s;
 }
-
+// navBar背景色在換頁時改變
 .charming{
     position: relative;
     background-color: var(--charming);
@@ -21,8 +21,9 @@
     background-color: var(--if);
 }
 .momBaby{
-    background-color: var(--gray2);
+    background-color: var(--gray3);
 }
+// ———————————————————————————————————————
 
 .logoName{
     @extend %flex;  
@@ -34,9 +35,23 @@
         font-weight: bold;
         padding-left: 10px;
         font-size: var(--heading3);
-        color: var(--yellow1);
     }
 }
+// 換頁時更改logo顏色
+.mainpageLogo{
+    color: var(--yellow1);
+}
+.charmingLogo{
+    color: var(--green1);
+}
+.selfRelianceLogo{
+    color: #fff;
+}
+.momBabyLogo{
+    color: var(--if);
+}
+// ———————————————————————————————————————
+
 .item{
     .itemactive{
         margin: 0px 30px;
@@ -53,9 +68,20 @@
         border-bottom: 3px solid var(--yellow2);
     }
 }
+// navBar字體顏色換頁時改變
 .charmingColor{
     a{
         color:var(--brown2);
+    }
+}
+.selfRelianceColor{
+    a{
+        color:#fff;
+    }
+}
+.momBabyColor{
+    a{
+        color:var(--gray1);
     }
 }
 

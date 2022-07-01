@@ -23,13 +23,30 @@ function Nav() {
     >
       <nav>
         <div className={style.logoName}>
-          <img src={`https://bibiya.tw/img/appleLogo.gif`} />
-          <a href="/">Angelica Liu</a>
+          <img src={`http://localhost:3000/img/appleLogo.gif`} />
+          <a
+            href="/"
+            className={
+              pageName == "/charming"
+                ? `${style.charmingLogo}`
+                : `${style.mainpageLogo}` && pageName == "/self-reliance"
+                ? `${style.selfRelianceLogo}`
+                : `${style.mainpageLogo}` && pageName == "/mom&baby"
+                ? `${style.momBabyLogo}`
+                : `${style.mainpageLogo}`
+            }
+          >
+            Angelica Liu
+          </a>
         </div>
         <div
           className={
             pageName == "/charming"
               ? `${style.item} ${style.charmingColor}`
+              : `${style.item}` && pageName == "/self-reliance"
+              ? `${style.item} ${style.selfRelianceColor}`
+              : `${style.item}` && pageName == "/mom&baby"
+              ? `${style.item} ${style.momBabyColor}`
               : `${style.item}`
           }
         >

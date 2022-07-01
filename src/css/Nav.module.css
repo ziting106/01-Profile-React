@@ -24,7 +24,7 @@
 }
 
 .momBaby {
-  background-color: var(--gray2);
+  background-color: var(--gray3);
 }
 
 .logoName img {
@@ -35,7 +35,22 @@
   font-weight: bold;
   padding-left: 10px;
   font-size: var(--heading3);
+}
+
+.mainpageLogo {
   color: var(--yellow1);
+}
+
+.charmingLogo {
+  color: var(--green1);
+}
+
+.selfRelianceLogo {
+  color: #fff;
+}
+
+.momBabyLogo {
+  color: var(--if);
 }
 
 .item .itemactive {
@@ -55,6 +70,14 @@
 
 .charmingColor a {
   color: var(--brown2);
+}
+
+.selfRelianceColor a {
+  color: #fff;
+}
+
+.momBabyColor a {
+  color: var(--gray1);
 }
 
 @media screen and (max-width: 1024px) {

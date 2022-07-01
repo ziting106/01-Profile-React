@@ -8,10 +8,32 @@ nav{
   justify-content: space-between;
   margin: 0px 100px; 
 }
+img{
+  width: 100%;
+  object-fit: contain;
+}
+
 @font-face {
   font-family: huninn;
   src: url(./font/jf-openhuninn-1.1.ttf);
   font-display: swap;
+}
+ul{
+  list-style-type: none;
+  counter-increment: li;
+}
+li {
+  counter-increment: li;
+}
+li::before{
+  content: "0"counter(li)". ";
+}
+a{
+  text-decoration:none;
+}
+section{
+
+  margin: 30px 100px;
 }
 body{
   background-image: url(../public/img/h-bckground.png);
@@ -28,6 +50,7 @@ body{
   --yellow2:#F2B545;
   --gray1:rgb(83, 83, 83);
   --gray2:rgb(143, 143, 143);
+  --gray3:rgb(209, 209, 209);
   --charming:#F0EFEB;
   --brown1: #472929;
   --brown2: #795252;
@@ -50,14 +73,7 @@ body{
   --pageBorder:40px;
   --holdpadding:50px;
 }
-a{
-  text-decoration:none;
- 
-}
-section{
 
-  margin: 30px 100px;
-}
 
 
 @media screen and (max-width: 1000px) {
