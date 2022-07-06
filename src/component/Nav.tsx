@@ -10,7 +10,7 @@ function Nav() {
   let pageName = location.pathname;
   return (
     <div
-      id="apple"
+      id="top"
       className={
         pageName == "/charming"
           ? `${style.navBar} ${style.charming}`

@@ -1,3 +1,21 @@
+.marketingResearch h1, .kickoff h1 {
+  font-size: var(--heading3);
+  color: var(--green1);
+  margin-bottom: 20px;
+}
+
+.marketingResearch p, .kickoff p, .challenge {
+  font-size: var(--heading5);
+  color: var(--gray2);
+  line-height: 40px;
+}
+
+.marketingResearch, .kickoff, .challenge {
+  display: flex;
+  justify-content: center;
+  padding: 15% 0px;
+}
+
 .project {
   display: flex;
   color: var(--brown2);
@@ -14,13 +32,6 @@
   margin-right: 70px;
 }
 
-.challenge {
-  display: flex;
-  justify-content: center;
-  font-size: var(--heading5);
-  line-height: 40px;
-  margin: 100px 0px;
-}
 .challenge > div {
   margin: 0px 50px;
   width: 40%;
@@ -35,9 +46,6 @@
   color: var(--gray2);
   transition: 0.3s;
 }
-.challenge p {
-  color: var(--gray2);
-}
 .challenge li::before {
   color: var(--green1);
   font-weight: bold;
@@ -49,12 +57,13 @@
 .phoneImg {
   position: relative;
   margin-bottom: 10%;
+  padding-top: 10%;
 }
-.phoneImg div {
+.phoneImg .charmingFImg {
   display: flex;
   overflow: scroll;
 }
-.phoneImg div::-webkit-scrollbar {
+.phoneImg .charmingFImg::-webkit-scrollbar {
   display: none;
   /* Chrome Safari */
 }
@@ -69,9 +78,49 @@
 
 .colorlass {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 5%;
-  height: 100%;
+  height: 79.5%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+.kickoff {
+  padding: 100px 0px;
+  background-color: var(--charming);
+  align-items: center;
+}
+.kickoff .kickoffText {
+  width: 30%;
+}
+.kickoff .kickoffImg {
+  width: 40%;
+  margin-left: 50px;
+  position: relative;
+}
+.kickoff .kickoffImg img {
+  border-radius: 15px;
+}
+.kickoff .kickoffImg img:last-child {
+  position: absolute;
+  right: 0%;
+  top: -10%;
+}
+
+.marketingResearch img {
+  margin-right: 5%;
+  border-radius: 15px;
+  width: 50%;
+  box-shadow: 5px 2px 10px var(--gray2);
+  margin-bottom: 50px;
+}
+.rightFixBar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 30%;
+  right: 30px;
+  line-height: 30px;
+  color: var(--brown2);
 }
