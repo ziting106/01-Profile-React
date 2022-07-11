@@ -75,50 +75,7 @@ function MainPage() {
               並且讓所有創作者可以在平台上與其他的會員交流意見、觀看彼此的作品集，並會由官方提供最新的設計資訊給所有的網站用戶。
             </p>
           </Link>
-          <Link to={`/charming`} className={style.introduceImg}>
-            <div>
-              <img
-                src={`http://localhost:3000/img/2022-homepage/web/mainpage.jpg`}
-                alt=""
-              />
-              <p>首頁</p>
-            </div>
-            <div>
-              <img
-                src={`http://localhost:3000/img/2022-homepage/web/mainpage_product.jpg`}
-                alt=""
-              />
-              <p>商品首頁</p>
-            </div>
-            <div>
-              <img
-                src={`http://localhost:3000/img/2022-homepage/web/productdetail.jpg`}
-                alt=""
-              />
-              <p>商品詳細頁</p>
-            </div>
-            <div>
-              <img
-                src={`http://localhost:3000/img/2022-homepage/web/cart1.jpg`}
-                alt=""
-              />
-              <p>購物流程一：開始結帳</p>
-            </div>
-            <div>
-              <img
-                src={`http://localhost:3000/img/2022-homepage/web/cart2.jpg`}
-                alt=""
-              />
-              <p>購物流程二：確認訂單</p>
-            </div>
-            <div>
-              <img
-                src={`http://localhost:3000/img/2022-homepage/web/mySell_product.jpg`}
-                alt=""
-              />
-              <p>賣家中心</p>
-            </div>
-          </Link>
+          <Link to={`/charming`} className={style.introduceImg}></Link>
         </div>
       </div>
       <div className={style.if}>

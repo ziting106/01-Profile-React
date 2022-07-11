@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;  
 }
 nav{
   display: flex;
@@ -20,20 +21,13 @@ img{
 }
 ul{
   list-style-type: none;
-  counter-increment: li;
 }
-li {
-  counter-increment: li;
-}
-li::before{
-  content: "0"counter(li)". ";
-}
+
 a{
   text-decoration:none;
 }
-section{
-
-  margin: 30px 100px;
+section, figure{
+  margin: 2% 12%;
 }
 body{
   background-image: url(../public/img/h-bckground.png);

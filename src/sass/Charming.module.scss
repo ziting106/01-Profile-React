@@ -13,6 +13,7 @@
     justify-content: center;
     padding:15% 0px;
 }
+// header
 .project{
     display: flex;
     color: var(--brown2);
@@ -28,6 +29,7 @@
         margin-right: 70px;
     }
 }
+
 // page1--challenge
 .challenge{
     @extend %flex;
@@ -39,27 +41,55 @@
     > ul{
         margin: 0px 50px;
     }
+    ul{
+        list-style-type: none;
+        counter-increment: li;
+    }
     h1{
         color: var(--green1);
     }
     li{
         color: var(--gray2);
         transition: .3s;
+        counter-increment: li;
     }
     li::before{
         color: var(--green1);
         font-weight: bold;
+        content: "0"counter(li)". ";
     }
     li:hover{
         color: var(--green1);
     }
 }
-
-
+// 概念發想
+.concept{
+    @extend %flex;
+    align-items: center;
+    h1{
+        @extend %title;
+    }
+    p{
+        @extend %text;
+    }
+}
+.referTo{
+    width: 100%;
+    padding-right: 50px;
+}
+// sidemap
+.sidemap{
+    background-color: var(--charming);
+    padding:8% 0px;
+}
+// 手機版RWD
+.phoneRWD{
+    padding: 10% 0px;
+    text-align: center;
+}
 .phoneImg{
     position: relative;
     margin-bottom: 10%;
-    padding-top: 10%;
     .charmingFImg{
         display: flex;
         overflow:scroll;
@@ -73,25 +103,25 @@
         padding: 10px;
         margin: 0px 10px;
         border: 1px solid var(--gray3);
-        border-radius: 15px;
+        border-radius: 5%;
     }
 }
+// 右側陰影
 .colorlass{
     position: absolute;
-    bottom: 0;
+    top: 0%;
     right: 0;
     width: 5%;
-    height: 79.5%;
+    height: 100%;
     background: linear-gradient(to right, rgba(0,0,0,0) , rgb(0, 0, 0,.2));
 }
 
-.kickoff{
+// 底色為charming的區塊＝>概念發想、需求者環境評估
+.backgroundColor{
     @extend %flex;
-    padding: 100px 0px;
     background-color: var(--charming);
-    align-items: center;
-    .kickoffText{
-        width: 30%;
+    .backgroundColorText{
+        width: 30%; 
     }
     h1{
         @extend %title;
@@ -99,35 +129,30 @@
     p{
         @extend %text;
     }
-    .kickoffImg{
-        width: 40%;;
-        margin-left: 50px;
-        position: relative;
-        img{
-            border-radius: 15px;
-           
-        }
-        img:last-child{
-            position: absolute;
-            right: 0%;
-            top: -10%;
-            // animation-name: kickoff;
-            // animation-duration: 3s;
-            // animation-iteration-count: infinite;
-            // animation-fill-mode: backwards;
-            // animation-direction: alternate-reverse;
-        }
-    }
 }
-.marketingResearch{
-    @extend %flex;
+.backgroundColorImg{
+    width: 40%;;
+    margin-right: 50px;
+    position: relative;
     img{
-        margin-right: 5%;
-        border-radius: 15px;
-        width: 50%;
-        box-shadow:5px 2px 10px var(--gray2);
-        margin-bottom: 50px;
+        border-radius: 5%;
     }
+    img:last-child{
+        position: absolute;
+        right: 0%;
+        top: -10%;
+    }
+}
+.wireframe{
+   @extend %flex;
+    align-items: center;
+    img{
+        width: 50%;
+        border-radius: 5%;
+        margin-left: 50px
+    }
+}
+.text{
     h1{
         @extend %title;
     }
@@ -135,13 +160,59 @@
         @extend %text;
     }
 }
-.rightFixBar{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-    position: fixed;
-    top:30%;
-    right: 30px;
-    line-height:30px;
-    color:var(--brown2)
+.styleGuide{
+    background-color: var(--charming);
+    padding: 5% 0 ;
+    text-align: center;
+}
+.styleGuideImg{
+    display: flex;
+    align-items:flex-start;
+    overflow: scroll;
+    img{
+        margin: 4% 1%;
+        width: 30%;
+        border-radius: 5%;
+    }
+}
+.styleGuideImg::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+}
+.prototype{
+    padding: 2% 0;
+    text-align: center;
+    background-color: var(--charming);
+}
+.prototypeImg{
+    // display: flex;
+    height: 100vh;
+    overflow: scroll;
+    img{
+        width: 80%;
+        border-radius: 15px;
+    }
+    p{
+        font-size: var(--heading4);
+        color: var(--gray2);
+        line-height:300%;
+    }
+}
+.prototypeImg::-webkit-scrollbar{
+    display: none;
+}
+.mockup{
+    text-align: center;
+    padding: 5% 0px;
+}
+.github{
+    display: flex;
+    justify-content: center;
+    button{
+        border:2px solid var(--green1);
+        background-color: #fff;
+        font-size: var(--heading4);
+        padding: 1% 1.5%;
+        border-radius: 15px;
+        color: var(--green1);
+    }
 }
