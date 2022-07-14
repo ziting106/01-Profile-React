@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: flex-end;
   position: fixed;
-  top: 30%;
+  top: 20%;
   right: 30px;
   line-height: 30px;
   border-right: 1px solid var(--gray3);
@@ -30,4 +30,18 @@
   color: var(--green1);
   font-weight: bold;
   font-size: large;
+}
+
+@media screen and (max-width: 1024px) {
+  .rightFixBar {
+    font-size: var(--heading6);
+  }
+  .changeColor {
+    font-size: var(--heading5);
+  }
+}
+@media screen and (max-width: 780px) {
+  .rightFixBar {
+    display: none;
+  }
 }

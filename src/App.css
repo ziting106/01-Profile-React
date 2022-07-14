@@ -22,8 +22,6 @@
   --heading4: 24px;
   --heading5: 18px;
   --heading6: 12px;
-  --heading7: 10px;
-  --heading8: 8px;
   /* 圓角 */
   --desk-border-radius:15px;
   /* 網頁版border寬度 */
@@ -73,14 +71,30 @@ body{
   min-height: calc(100vh - 195px);
 }
 
-
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:1024px) {
+  :root{
+    /* 字體大小 */
+    --heading1: 54px;
+    --heading2: 46px;
+    --heading3: 30px;
+    --heading4: 22px;
+    --heading5: 16px;
+  }
+}
+@media screen and (max-width:780px) {
   section {
     margin: 30px;
   }
+  :root{
+    /* 字體大小 */
+    --heading1: 52px;
+    --heading2: 44px;
+    --heading3: 28px;
+    --heading4: 20px;
+    --heading5: 14px;
+  }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width:441px){
   section{
     margin: 15px;
   }

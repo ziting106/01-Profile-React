@@ -7,9 +7,9 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Charming() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   return (
     <>
       <div>
