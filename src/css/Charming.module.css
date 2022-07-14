@@ -273,9 +273,41 @@
     padding: 10% 0px;
     translate: 0.5s;
   }
+  .challenge h1, .concept h1, .backgroundColor h1, .text h1 {
+    font-size: calc(var(--heading3) - 4px);
+    font-weight: 500;
+  }
   .challenge, .concept p, .backgroundColor p, .text p, .issue div p {
     font-size: var(--heading4);
     line-height: 35px;
+  }
+  .challenge > div {
+    margin: 0 40px 0 0;
+    width: 100%;
+  }
+  .challenge > ul {
+    margin: 0px;
+    width: 100%;
+  }
+  .backgroundColor {
+    align-items: flex-start;
+    padding: 100px 20px;
+  }
+  .backgroundColor .backgroundColorText {
+    width: 100%;
+    padding-right: 20px;
+  }
+  .backgroundColorImg {
+    width: 100%;
+    margin-right: 20px;
+    position: relative;
+  }
+  .concept {
+    flex-direction: column;
+  }
+  .referTo {
+    padding-right: 0px;
+    padding-bottom: 10%;
   }
   .issue hgroup {
     width: 30%;
@@ -290,7 +322,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 441px) {
+@media screen and (max-width: 500px) {
   .challenge, .concept, .backgroundColor, .wireframe {
     flex-direction: column;
     align-items: center;

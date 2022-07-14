@@ -149,20 +149,13 @@
     width: calc(50% - 10px);
   }
   .charming p, .if p, .momBaby p {
-    font-size: var(--heading5);
     line-height: 30px;
-    color: var(--gray2);
-    text-align: center;
-    padding-bottom: 20px;
   }
   .mainpage-header hgroup p:first-child {
     font-size: var(--heading3);
   }
 }
 @media screen and (max-width: 441px) {
-  .charming h1, .if hgroup p:first-child, .momBaby hgroup p:first-child {
-    font-size: var(--heading4);
-  }
   .mainpage-header hgroup .icon {
     margin: 50px 0px;
   }
@@ -186,7 +179,6 @@
     height: 15vh;
   }
   .seeMore button {
-    font-size: var(--heading5);
     padding: 3% 5%;
   }
   .if {
@@ -197,21 +189,5 @@
   }
   .if .ifImg div {
     margin: 0px;
-  }
-  .momBaby .momBabyImg {
-    display: block;
-  }
-  .momBaby .momBabyImg img {
-    width: 100%;
-  }
-  .momBaby .momBabyImg .video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 58%;
-  }
-  .momBaby .momBabyImg .video iframe {
-    margin: 0px;
-    margin-top: 20px;
   }
 }

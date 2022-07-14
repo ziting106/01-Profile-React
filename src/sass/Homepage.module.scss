@@ -1,26 +1,26 @@
 %flex{
     display: flex;
     align-items: center; 
-  }
-  %header{
+}
+%header{
     font-size: var(--heading1);
     text-align: center;
     line-height: 70px;
     // padding-bottom: 50px;
     font-weight: 500;
-  }
-  %text{
+}
+%text{
     font-size: var(--heading4);
     line-height: 50px;
     color: var(--gray2);
     text-align: center;
     padding-bottom: 20px;
-  }
-  %img{
+}
+%img{
     border-radius: 15px;
     box-shadow: 0px 0px 10px var(--gray2);
     transition: .5s;
-  }
+}
 .mainpage-header{
     hgroup{
         animation-duration: 1s;
@@ -137,7 +137,6 @@
             @extend %img;
         }
     }
-   
 }
 .momBaby{
     margin-bottom: 10%;
@@ -157,7 +156,7 @@
         text-align: center;
         line-height: 50px;
         padding-bottom: 0px;
-      }
+    }
 }
 @media screen and (max-width:780px) {
     .charming{
@@ -165,22 +164,15 @@
     }
     .charming .introduceImg > div {
         width: calc(50% - 10px);
-      }
-      %text{
-        font-size: var(--heading5);
+    }
+    %text{
         line-height: 30px;
-        color: var(--gray2);
-        text-align: center;
-        padding-bottom: 20px;
-      }
-      .mainpage-header hgroup p:first-child {
+    }
+    .mainpage-header hgroup p:first-child {
         font-size: var(--heading3);
-      }
+    }
 }
 @media screen and (max-width:441px){
-    %header{
-        font-size: var(--heading4);
-      }
     .mainpage-header hgroup .icon {
         margin: 50px 0px;
     }
@@ -203,36 +195,18 @@
     .seeMore{
         height: 15vh;
         button{
-            font-size: var(--heading5);
             padding: 3% 5%;
         }
     }
-    
-      .if{
-        margin: 0px;
-      }
-      .if .ifImg {
-        display: block;
-      }
-      .if .ifImg div{
+    .if{
         margin: 0px;
     }
-      .momBaby .momBabyImg {
-        display:block;
-      }
-      .momBaby .momBabyImg img {
-        width: 100%;
-      }
-      .momBaby .momBabyImg .video {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 58%;
-      }
-      .momBaby .momBabyImg .video iframe {
+    .if .ifImg {
+        display: block;
+    }
+    .if .ifImg div{
         margin: 0px;
-        margin-top: 20px;
-      }
+    }
 }
 
 

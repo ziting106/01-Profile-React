@@ -99,18 +99,12 @@
 }
 
 @media screen and (max-width:600px){
-    .navBar .logoName{
-        a{
-            font-size: var(--heading5);
-        }
-    }
     .navBar .item .itemactive{
         margin: 0px;
     }
     .navBar .item a {
         padding: 0px 10px;
         transition: 0.5s;
-        font-size: var(--heading5);
       }
       .navBar .logoName img {
         width: 30px;
@@ -119,8 +113,13 @@
         margin: 0px 15px;
       }
 }
-@media screen and (max-width:320px){
+@media screen and (max-width:440px){
+    .navBar .logoName{
+        a{
+            font-size: var(--heading4);
+        }
+    }
     .navBar .item a {
-        font-size: var(--heading6);
+        font-size: var(--heading5);
       }
 }

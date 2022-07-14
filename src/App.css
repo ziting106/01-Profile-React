@@ -90,12 +90,18 @@ body{
     --heading1: 52px;
     --heading2: 44px;
     --heading3: 28px;
-    --heading4: 20px;
-    --heading5: 14px;
+    --heading4: 18px;
   }
 }
-@media screen and (max-width:441px){
+@media screen and (max-width:500px){
   section{
     margin: 15px;
+  }
+  :root{
+    /* 字體大小 */
+    --heading1: 50px;
+    --heading2: 42px;
+    --heading3: 26px;
+    --heading4: 18px;
   }
 }
