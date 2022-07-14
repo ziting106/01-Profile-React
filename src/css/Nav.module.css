@@ -19,14 +19,6 @@
   background-color: var(--charming);
 }
 
-.if {
-  background-color: var(--if);
-}
-
-.momBaby {
-  background-color: var(--gray3);
-}
-
 .logoName img {
   width: 50px;
   white-space: nowrap;
@@ -46,11 +38,11 @@
 }
 
 .selfRelianceLogo {
-  color: #fff;
+  color: var(--if);
 }
 
 .momBabyLogo {
-  color: var(--if);
+  color: var(--momBaby);
 }
 
 .item .itemactive {
@@ -73,7 +65,7 @@
 }
 
 .selfRelianceColor a {
-  color: #fff;
+  color: var(--gray1);
 }
 
 .momBabyColor a {
@@ -94,21 +86,17 @@
   .navBar .logoName a {
     font-size: var(--heading5);
   }
-
   .navBar .item .itemactive {
     margin: 0px;
   }
-
   .navBar .item a {
     padding: 0px 10px;
     transition: 0.5s;
     font-size: var(--heading5);
   }
-
   .navBar .logoName img {
     width: 30px;
   }
-
   .navBar nav {
     margin: 0px 15px;
   }

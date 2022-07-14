@@ -4,7 +4,7 @@
   margin-bottom: 20px;
 }
 
-.text p, .backgroundColor p, .concept p, .challenge {
+.issue div p, .text p, .backgroundColor p, .concept p, .challenge {
   font-size: var(--heading5);
   color: var(--gray2);
   line-height: 40px;
@@ -14,6 +14,12 @@
   display: flex;
   justify-content: center;
   padding: 15% 0px;
+}
+
+.issue img, .prototypeImg img, .styleGuideImg img, .phoneImg img {
+  padding: 10px;
+  box-shadow: 0px 0px 10px var(--gray2);
+  border-radius: 15px;
 }
 
 .project {
@@ -38,10 +44,8 @@
 }
 .challenge > ul {
   margin: 0px 50px;
-}
-.challenge ul {
   list-style-type: none;
-  counter-increment: li;
+  counter-reset: li;
 }
 .challenge h1 {
   color: var(--green1);
@@ -87,16 +91,12 @@
   overflow: scroll;
 }
 .phoneImg .charmingFImg::-webkit-scrollbar {
-  display: none;
-  /* Chrome Safari */
+  display: none; /* Chrome Safari */
 }
 .phoneImg img {
   background-color: #fff;
   width: 20%;
-  padding: 10px;
-  margin: 0px 10px;
-  border: 1px solid var(--gray3);
-  border-radius: 5%;
+  margin: 10px 10px;
 }
 
 .colorlass {
@@ -120,7 +120,7 @@
   position: relative;
 }
 .backgroundColorImg img {
-  border-radius: 5%;
+  border-radius: 15px;
 }
 .backgroundColorImg img:last-child {
   position: absolute;
@@ -133,7 +133,7 @@
 }
 .wireframe img {
   width: 50%;
-  border-radius: 5%;
+  border-radius: 15px;
   margin-left: 50px;
 }
 
@@ -149,14 +149,13 @@
   overflow: scroll;
 }
 .styleGuideImg img {
+  background-color: #fff;
   margin: 4% 1%;
   width: 30%;
-  border-radius: 5%;
 }
 
 .styleGuideImg::-webkit-scrollbar {
-  display: none;
-  /* Chrome Safari */
+  display: none; /* Chrome Safari */
 }
 
 .prototype {
@@ -165,13 +164,9 @@
   background-color: var(--charming);
 }
 
-.prototypeImg {
-  height: 100vh;
-  overflow: scroll;
-}
 .prototypeImg img {
-  width: 80%;
-  border-radius: 15px;
+  width: 70%;
+  background-color: #fff;
 }
 .prototypeImg p {
   font-size: var(--heading4);
@@ -199,4 +194,47 @@
   padding: 1% 1.5%;
   border-radius: 15px;
   color: var(--green1);
+}
+
+.issue {
+  display: flex;
+  padding: 6% 0 11% 0;
+  justify-content: flex-start;
+}
+.issue hgroup {
+  width: 30%;
+  margin: 0% 5%;
+  font-size: var(--heading3);
+  line-height: 50px;
+  text-align: center;
+  white-space: nowrap;
+}
+.issue hgroup p:first-child {
+  font-size: var(--heading4);
+  color: var(--green1);
+}
+.issue div {
+  margin: 0 15% 0 10%;
+  width: 50%;
+}
+.issue img {
+  margin-top: 10%;
+}
+
+.cssIssue {
+  background: linear-gradient(90deg, var(--charming) 40%, transparent 40%) center/100% 100%, rgb(53, 53, 53);
+}
+.cssIssue hgroup {
+  color: var(--gray1);
+}
+.cssIssue img {
+  background-color: #fff;
+}
+
+.dataPicture {
+  color: var(--gray2);
+  background: linear-gradient(90deg, rgb(53, 53, 53) 40%, transparent 40%) center/100% 100%, var(--charming);
+}
+.dataPicture img {
+  background-color: rgb(45, 45, 45);
 }

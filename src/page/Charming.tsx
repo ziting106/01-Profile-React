@@ -10,8 +10,6 @@ function Charming() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  let hash = window.location.hash;
-  if (hash === "#sidemap") alert(hash);
   return (
     <>
       <div>
@@ -30,6 +28,7 @@ function Charming() {
           id="challenge"
           className={`${style.challenge} ${style.changeColor}`}
           data-aos="fade"
+          data-aos-duration="1000"
         >
           <div>
             <h1>專題簡介：</h1>
@@ -42,23 +41,25 @@ function Charming() {
           </div>
           <ul>
             <h1>遇到的挑戰：</h1>
-            <a href="/">
+            <a href="#cssIssue">
               <li>團隊間CSS互相影響怎麼辦？</li>
             </a>
-            <a href="/">
+            <a href="#dataPicture">
               <li>資料庫圖片變數讀取不到？</li>
             </a>
-            <a href="/">
-              <li>如何串接後端API？</li>
-            </a>
-            <a href="/">
+            <a href="#dateLine">
               <li>Deadline快到了完成度還很低怎麼辦？</li>
             </a>
           </ul>
         </article>
       </section>
       {/* 設計流程 */}
-      <div id="designFlow" className={style.backgroundColor} data-aos="fade">
+      <div
+        id="designFlow"
+        className={style.backgroundColor}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <figure>
           <img
             src="http://localhost:3000/img/charming/designFloor.webp"
@@ -67,7 +68,12 @@ function Charming() {
         </figure>
       </div>
       {/* 概念發想 */}
-      <section id="concept" className={style.concept} data-aos="fade">
+      <section
+        id="concept"
+        className={style.concept}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <div>
           <h1>概念發想</h1>
           <p>
@@ -87,6 +93,7 @@ function Charming() {
         id="marketingResearch"
         className={style.backgroundColor}
         data-aos="fade"
+        data-aos-duration="1000"
       >
         <div className={style.backgroundColorImg}>
           <img src="http://localhost:3000/img/charming/referTo.webp" alt="" />
@@ -99,7 +106,12 @@ function Charming() {
         </div>
       </div>
       {/* 需求者環境評估 */}
-      <section id="referTo" className={style.concept} data-aos="fade">
+      <section
+        id="referTo"
+        className={style.concept}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <div className={style.referTo}>
           <h1>需求者環境評估</h1>
           <p>
@@ -112,13 +124,23 @@ function Charming() {
         </div>
       </section>
       {/* sidemap */}
-      <div id="sidemap" className={style.sidemap} data-aos="fade">
+      <div
+        id="sidemap"
+        className={style.sidemap}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <figure>
           <img src="http://localhost:3000/img/charming/sideMap.webp" alt="" />
         </figure>
       </div>
       {/* wireframe */}
-      <section id="wireframe" className={style.wireframe} data-aos="fade">
+      <section
+        id="wireframe"
+        className={style.wireframe}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <div className={style.text}>
           <h1>Wireframe</h1>
           <p>
@@ -128,7 +150,12 @@ function Charming() {
         <img src="http://localhost:3000/img/charming/wireframe.webp" alt="" />
       </section>
       {/* style guide */}
-      <div id="styleGuide" className={style.styleGuide} data-aos="fade">
+      <div
+        id="styleGuide"
+        className={style.styleGuide}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <figure>
           <div className={style.text}>
             <h1>Style Guide</h1>
@@ -179,7 +206,12 @@ function Charming() {
         </figure>
       </div>
       {/* Mockup */}
-      <section id="mockup" className={style.mockup} data-aos="fade">
+      <section
+        id="mockup"
+        className={style.mockup}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <div className={style.text}>
           <h1>Mockup</h1>
           <p></p>
@@ -192,7 +224,12 @@ function Charming() {
         </div>
       </section>
       {/* Prototype */}
-      <div id="prototype" className={style.prototype} data-aos="fade">
+      <div
+        id="prototype"
+        className={style.prototype}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <div className={style.text}>
           <h1>Prototype</h1>
           <p></p>
@@ -244,7 +281,12 @@ function Charming() {
       </div>
 
       {/* 手機版RWD */}
-      <section id="phoneRWD" className={style.phoneRWD} data-aos="fade">
+      <section
+        id="phoneRWD"
+        className={style.phoneRWD}
+        data-aos="fade"
+        data-aos-duration="1000"
+      >
         <div className={style.text}>
           <h1>RWD</h1>
           <p></p>
@@ -298,10 +340,52 @@ function Charming() {
           </div>
           <div className={style.colorlass}></div>
         </div>
-        <a href="https://github.com/Billy302/Charming" className={style.github}>
-          <button> Github {"→"} </button>
-        </a>
       </section>
+      <div id="cssIssue" className={`${style.issue} ${style.cssIssue}`}>
+        <hgroup>
+          <p>Challenge 1</p>
+          <p>團隊間CSS互相影響怎麼辦？</p>
+        </hgroup>
+        <div data-aos="fade" data-aos-duration="1000">
+          <p>
+            我們使用css-module和JSS引入法解決了這個問題。css-module會將每一個className在輸出時轉為『JS檔案名稱_class__動態生成一段隨機碼』，如此在className的命名上就無須瞻前顧後察看是否與伙伴衝突。另外我們也將會全域影響的CSS和通用樣式統一寫在app.module.css裡，節省了後續維護的時間。
+          </p>
+          <img src="http://localhost:3000/img/charming/JSS.webp" alt="" />
+        </div>
+      </div>
+      <div id="dataPicture" className={`${style.issue} ${style.dataPicture}`}>
+        <hgroup>
+          <p>Challenge 2</p>
+          <p>資料庫圖片變數讀取不到？</p>
+        </hgroup>
+        <div data-aos="fade" data-aos-duration="1000">
+          <p>
+            解決辦法是將照片放在react的public資料夾，再用http://localhost:3000...的方式引入圖片。
+            Charming裡的產品圖片在資料庫是用「檔案名稱」來儲存，並以空白鍵分隔同一筆資料裡的多張圖片，輸出到前端再以「空白鍵」作為字串切割的依據，再用require的方式把照片引入，但在圖片的src中require帶有變數的圖片檔案會在讀取不到，因此後來改用網頁引用的方式，不用require的方式才讀取成功。
+          </p>
+          <img
+            src="http://localhost:3000/img/charming/dataPicture.webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div id="dateLine" className={`${style.issue} ${style.cssIssue}`}>
+        <hgroup>
+          <p>Challenge 3</p>
+          <p>繳交期限快到了還沒完成怎麼辦？</p>
+        </hgroup>
+        <div data-aos="fade" data-aos-duration="1000">
+          <p>
+            我們的解決辦法是「專業分工」。原本我們組員間的分工是功能取向，首頁、商品頁、會員中心、部落格系統等功能，各自負責該部分的前端和後端，但後來發現，大家有各自擅長/弱勢的技術，因此在繳交期限前兩個禮拜我與組員合作，採取「前後端分離」的方式，我接下他已經做好的後端來製作前端頁面，他則接下我的前端頁面串接後端，順利的完成了專題。
+          </p>
+          <a
+            href="https://github.com/Billy302/Charming"
+            className={style.github}
+          >
+            <button> Github {"→"} </button>
+          </a>
+        </div>
+      </div>
       <RightFixBar />
     </>
   );

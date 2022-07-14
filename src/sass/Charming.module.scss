@@ -13,6 +13,11 @@
     justify-content: center;
     padding:15% 0px;
 }
+%picture{
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--gray2);
+    border-radius: 15px;
+}
 // header
 .project{
     display: flex;
@@ -40,11 +45,10 @@
     }
     > ul{
         margin: 0px 50px;
-    }
-    ul{
         list-style-type: none;
-        counter-increment: li;
+        counter-reset: li;
     }
+
     h1{
         color: var(--green1);
     }
@@ -98,12 +102,10 @@
         display: none; /* Chrome Safari */
     }
     img{
+        @extend %picture;
         background-color: #fff;
         width: 20%;
-        padding: 10px;
-        margin: 0px 10px;
-        border: 1px solid var(--gray3);
-        border-radius: 5%;
+        margin: 10px 10px;
     }
 }
 // 右側陰影
@@ -135,7 +137,7 @@
     margin-right: 50px;
     position: relative;
     img{
-        border-radius: 5%;
+        border-radius: 15px;
     }
     img:last-child{
         position: absolute;
@@ -148,7 +150,7 @@
     align-items: center;
     img{
         width: 50%;
-        border-radius: 5%;
+        border-radius: 15px;
         margin-left: 50px
     }
 }
@@ -170,9 +172,10 @@
     align-items:flex-start;
     overflow: scroll;
     img{
+        @extend %picture;
+        background-color: #fff;
         margin: 4% 1%;
         width: 30%;
-        border-radius: 5%;
     }
 }
 .styleGuideImg::-webkit-scrollbar {
@@ -185,11 +188,12 @@
 }
 .prototypeImg{
     // display: flex;
-    height: 100vh;
-    overflow: scroll;
+    // height: 100vh;
+    // overflow: scroll;
     img{
-        width: 80%;
-        border-radius: 15px;
+        @extend %picture;
+        width: 70%;
+        background-color: #fff;
     }
     p{
         font-size: var(--heading4);
@@ -214,5 +218,53 @@
         padding: 1% 1.5%;
         border-radius: 15px;
         color: var(--green1);
+    }
+}
+
+.issue{
+    display: flex;
+    padding:6% 0  11% 0;
+    justify-content: flex-start;
+    // align-items: center;
+    //charlenge1 背景
+   
+    hgroup{
+        width: 30%;
+        margin: 0% 5%;
+        font-size: var(--heading3);
+        line-height:50px;
+        text-align: center;
+        white-space:nowrap;
+        p:first-child{
+            font-size: var(--heading4);
+            color: var(--green1);
+        }
+    }
+    div{
+        margin: 0 15% 0 10%;
+        width: 50%;
+        p{
+            @extend %text
+        }
+    }
+    img{
+        margin-top: 10%;
+        @extend %picture;
+    }
+}
+.cssIssue{
+    background:linear-gradient(90deg, var(--charming) 40%, transparent 40%)center/ 100% 100%, rgb(53, 53, 53);
+    hgroup{
+        color: var(--gray1);
+    }
+    img{
+        background-color: #fff;
+    }
+}
+.dataPicture{
+    color: var(--gray2);
+    background:linear-gradient(90deg, rgb(53, 53, 53) 40%, transparent 40%)center/ 100% 100%, var(--charming);
+    img{
+        background-color: rgb(45, 45, 45);
     }
 }

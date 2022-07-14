@@ -140,7 +140,6 @@
   .myPicture p {
     font-size: var(--heading4);
   }
-
   .mypic {
     flex-direction: column;
   }

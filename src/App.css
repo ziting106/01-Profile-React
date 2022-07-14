@@ -1,3 +1,37 @@
+:root{
+  /* 色票 */
+  --green1:#687316;
+  --green2:#BABF29;
+  --green3:#F0F2A6;
+  --yellow1:#BF5E26;
+  --yellow2:#F2B545;
+  --gray1:rgb(83, 83, 83);
+  --gray2:rgb(143, 143, 143);
+  --gray3:rgb(209, 209, 209);
+  --charming:#F0EFEB;
+  --brown1: #472929;
+  --brown2: #795252;
+  --brown3: #D6C5C5;
+  --brown4: #F4EFEF;
+  --if:#a51900;
+  --momBaby:#1A274C;
+  /* 字體大小 */
+  --heading1: 56px;
+  --heading2: 48px;
+  --heading3: 32px;
+  --heading4: 24px;
+  --heading5: 18px;
+  --heading6: 12px;
+  --heading7: 10px;
+  --heading8: 8px;
+  /* 圓角 */
+  --desk-border-radius:15px;
+  /* 網頁版border寬度 */
+  --border:2px solid var(--brown2);
+  --pageBorder:40px;
+  --holdpadding:50px;
+}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -35,37 +69,8 @@ body{
   font-family: huninn;
   background-attachment:fixed
 }
-:root{
-  /* 色票 */
-  --green1:#687316;
-  --green2:#BABF29;
-  --green3:#F0F2A6;
-  --yellow1:#BF5E26;
-  --yellow2:#F2B545;
-  --gray1:rgb(83, 83, 83);
-  --gray2:rgb(143, 143, 143);
-  --gray3:rgb(209, 209, 209);
-  --charming:#F0EFEB;
-  --brown1: #472929;
-  --brown2: #795252;
-  --brown3: #D6C5C5;
-  --brown4: #F4EFEF;
-  --if:#1A274C;
-  /* 字體大小 */
-  --heading1: 56px;
-  --heading2: 48px;
-  --heading3: 32px;
-  --heading4: 24px;
-  --heading5: 18px;
-  --heading6: 12px;
-  --heading7: 10px;
-  --heading8: 8px;
-  /* 圓角 */
-  --desk-border-radius:15px;
-  /* 網頁版border寬度 */
-  --border:2px solid var(--brown2);
-  --pageBorder:40px;
-  --holdpadding:50px;
+.content{
+  min-height: calc(100vh - 195px);
 }
 
 

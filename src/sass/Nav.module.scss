@@ -17,12 +17,12 @@
     position: relative;
     background-color: var(--charming);
 }
-.if{
-    background-color: var(--if);
-}
-.momBaby{
-    background-color: var(--gray3);
-}
+// .if{
+//     background-color: var(--if);
+// }
+// .momBaby{
+//     background-color: var(--gray3);
+// }
 // ———————————————————————————————————————
 
 .logoName{
@@ -45,10 +45,10 @@
     color: var(--green1);
 }
 .selfRelianceLogo{
-    color: #fff;
+    color: var(--if);
 }
 .momBabyLogo{
-    color: var(--if);
+    color: var(--momBaby);
 }
 // ———————————————————————————————————————
 
@@ -76,7 +76,7 @@
 }
 .selfRelianceColor{
     a{
-        color:#fff;
+        color:var(--gray1);
     }
 }
 .momBabyColor{

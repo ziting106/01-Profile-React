@@ -14,6 +14,9 @@
 .rightFixBar a::after {
   content: " -";
 }
+.rightFixBar a:hover {
+  font-size: large;
+}
 
 .phoneImg[aria-current]:not([aria-current=""]):not([aria-current=false]) {
   background-color: aqua;

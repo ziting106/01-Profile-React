@@ -19,16 +19,6 @@ function RightFixBar() {
 
   return (
     <div>
-      {/* <div>
-        <h1 id="topH1">1</h1>
-        <h1>2</h1>
-        <h1>3</h1>
-        <h1>4</h1>
-        <h1>5</h1>
-        <h1>6</h1>
-        <h1 id="tobtmH1">7</h1>
-      </div> */}
-
       <ul className={style.rightFixBar}>
         <li>
           <a
@@ -49,7 +39,7 @@ function RightFixBar() {
                 : `${style.textcolor}`
             }
           >
-            專題簡介與挑戰
+            Project Vision
           </a>
         </li>
         <li>
@@ -61,7 +51,7 @@ function RightFixBar() {
                 : `${style.textcolor}`
             }
           >
-            設計流程
+            Design Flow
           </a>
         </li>
         <li>
@@ -71,7 +61,7 @@ function RightFixBar() {
               hash == "#concept" ? `${style.changeColor}` : `${style.textcolor}`
             }
           >
-            概念發想
+            Target
           </a>
         </li>
         <li>
@@ -83,7 +73,7 @@ function RightFixBar() {
                 : `${style.textcolor}`
             }
           >
-            市場調查
+            Marketing Research
           </a>
         </li>
         <li>
@@ -162,6 +152,42 @@ function RightFixBar() {
             }
           >
             RWD
+          </a>
+        </li>
+        <li>
+          <a
+            href="#cssIssue"
+            className={
+              hash == "#cssIssue"
+                ? `${style.changeColor}`
+                : `${style.textcolor}`
+            }
+          >
+            Challenge 1
+          </a>
+        </li>
+        <li>
+          <a
+            href="#dataPicture"
+            className={
+              hash == "#dataPicture"
+                ? `${style.changeColor}`
+                : `${style.textcolor}`
+            }
+          >
+            Challenge 2
+          </a>
+        </li>
+        <li>
+          <a
+            href="#dateLine"
+            className={
+              hash == "#dateLine"
+                ? `${style.changeColor}`
+                : `${style.textcolor}`
+            }
+          >
+            Challenge 3
           </a>
         </li>
       </ul>

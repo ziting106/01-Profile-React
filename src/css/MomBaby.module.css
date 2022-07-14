@@ -1,0 +1,17 @@
+.momBaby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.momBaby p {
+  position: absolute;
+  padding: 5%;
+  font-size: var(--heading1);
+  color: var(--momBaby);
+  z-index: 1;
+}
+.momBaby img {
+  width: 35%;
+  opacity: 0.3;
+}
