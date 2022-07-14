@@ -162,9 +162,6 @@
 @media screen and (max-width: 441px) {
   .charming h1, .if hgroup p:first-child, .momBaby hgroup p:first-child {
     font-size: var(--heading4);
-    text-align: center;
-    line-height: 50px;
-    padding-bottom: 0px;
   }
   .mainpage-header hgroup .icon {
     margin: 50px 0px;
@@ -188,11 +185,18 @@
   .seeMore {
     height: 15vh;
   }
+  .seeMore button {
+    font-size: var(--heading5);
+    padding: 3% 5%;
+  }
   .if {
     margin: 0px;
   }
   .if .ifImg {
     display: block;
+  }
+  .if .ifImg div {
+    margin: 0px;
   }
   .momBaby .momBabyImg {
     display: block;
