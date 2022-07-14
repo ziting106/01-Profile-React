@@ -1,4 +1,4 @@
-.momBaby{
+.selfReliance{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,4 +15,22 @@
         width: 35%;
         opacity: .3;
     }
+}
+@media screen and (max-width:780px) {
+    .selfReliance{
+        p{
+            font-size: var(--heading3);
+        }
+        img{
+            width: 90%;
+        }
+      }
+}
+
+@media screen and (max-width:441px){
+    .momBaby{
+        p{
+            font-size: var(--heading4);
+        }
+      }
 }

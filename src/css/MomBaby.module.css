@@ -1,6 +1,6 @@
 .momBaby {
+  height: 50vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -12,6 +12,20 @@
   z-index: 1;
 }
 .momBaby img {
-  width: 35%;
+  width: 500px;
   opacity: 0.3;
+}
+
+@media screen and (max-width: 780px) {
+  .momBaby p {
+    font-size: var(--heading3);
+  }
+  .momBaby img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 441px) {
+  .momBaby p {
+    font-size: var(--heading4);
+  }
 }
