@@ -14,7 +14,7 @@ function Charming() {
   return (
     <>
       <div>
-        <img src="http://localhost:3000/img/charming.png" alt="" />
+        <img src="https://bibiya.tw/img/charming.png" alt="" />
       </div>
       <section>
         <hgroup className={style.project}>
@@ -63,12 +63,12 @@ function Charming() {
       >
         <figure>
           <img
-            src="http://localhost:3000/img/charming/designFloor.webp"
+            src="https://bibiya.tw/img/charming/designFloor.webp"
             alt=""
             className={style.horizontalImg}
           />
           <img
-            src="http://localhost:3000/img/charming/designFloor_st.webp"
+            src="https://bibiya.tw/img/charming/designFloor_st.webp"
             alt=""
             className={style.verticalImg}
           />
@@ -88,11 +88,8 @@ function Charming() {
           </p>
         </div>
         <div>
-          <img
-            src="http://localhost:3000/img/charming/firstThinking.webp"
-            alt=""
-          />
-          {/* <img src="http://localhost:3000/img/charming/target.webp" alt="" /> */}
+          <img src="https://bibiya.tw/img/charming/firstThinking.webp" alt="" />
+          {/* <img src="https://bibiya.tw/img/charming/target.webp" alt="" /> */}
         </div>
       </section>
       {/* 市場調查 */}
@@ -104,7 +101,7 @@ function Charming() {
       >
         <div className={style.backgroundColorImg}>
           <img
-            src="http://localhost:3000/img/charming/referTo.webp"
+            src="https://bibiya.tw/img/charming/referTo.webp"
             alt=""
             className={style.horizontalImg}
           />
@@ -130,7 +127,7 @@ function Charming() {
           </p>
         </div>
         <div>
-          <img src="http://localhost:3000/img/charming/graduater.webp" alt="" />
+          <img src="https://bibiya.tw/img/charming/graduater.webp" alt="" />
           <p>大專校院藝術學門開設校數及學生數</p>
         </div>
       </section>
@@ -142,7 +139,7 @@ function Charming() {
         data-aos-duration="1000"
       >
         <figure>
-          <img src="http://localhost:3000/img/charming/sideMap.webp" alt="" />
+          <img src="https://bibiya.tw/img/charming/sideMap.webp" alt="" />
         </figure>
       </div>
       {/* wireframe */}
@@ -158,7 +155,7 @@ function Charming() {
             採用Figma繪製，在Wireframe部分我負責首頁和活動頁面，首頁分為登入前、登入後兩種，這樣區分的目的是讓初次來到網站的人可以透過登入前首頁來認識網站，登入後則出現一些客製化的網站資訊。
           </p>
         </div>
-        <img src="http://localhost:3000/img/charming/wireframe.webp" alt="" />
+        <img src="https://bibiya.tw/img/charming/wireframe.webp" alt="" />
       </section>
       {/* style guide */}
       <div
@@ -178,44 +175,17 @@ function Charming() {
             >
               {">"}
             </div>
+            <img src="https://bibiya.tw/img/charming/styleGuide1.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide2.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide3.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide4.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide5.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide6.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide7.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide8.webp" alt="" />
+            <img src="https://bibiya.tw/img/charming/styleGuide9.webp" alt="" />
             <img
-              src="http://localhost:3000/img/charming/styleGuide1.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide2.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide3.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide4.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide5.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide6.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide7.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide8.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide9.webp"
-              alt=""
-            />
-            <img
-              src="http://localhost:3000/img/charming/styleGuide10.webp"
+              src="https://bibiya.tw/img/charming/styleGuide10.webp"
               alt=""
             />
           </div>
@@ -234,7 +204,7 @@ function Charming() {
         </div>
         <div>
           <img
-            src="http://localhost:3000/img/charming/mockup/mockupTotal.webp"
+            src="https://bibiya.tw/img/charming/mockup/mockupTotal.webp"
             alt=""
           />
         </div>
@@ -254,42 +224,36 @@ function Charming() {
           <div>
             <p>首頁</p>
             <img
-              src={`http://localhost:3000/img/charming/web/mainpage.jpg`}
+              src={`https://bibiya.tw/img/charming/web/mainpage.jpg`}
               alt=""
             />
           </div>
           <div>
             <p>商品首頁</p>
             <img
-              src={`http://localhost:3000/img/charming/web/mainpage_product.jpg`}
+              src={`https://bibiya.tw/img/charming/web/mainpage_product.jpg`}
               alt=""
             />
           </div>
           <div>
             <p>商品詳細頁</p>
             <img
-              src={`http://localhost:3000/img/charming/web/productdetail.jpg`}
+              src={`https://bibiya.tw/img/charming/web/productdetail.jpg`}
               alt=""
             />
           </div>
           <div>
             <p>購物流程一：開始結帳</p>
-            <img
-              src={`http://localhost:3000/img/charming/web/cart1.jpg`}
-              alt=""
-            />
+            <img src={`https://bibiya.tw/img/charming/web/cart1.jpg`} alt="" />
           </div>
           <div>
             <p>購物流程二：確認訂單</p>
-            <img
-              src={`http://localhost:3000/img/charming/web/cart2.jpg`}
-              alt=""
-            />
+            <img src={`https://bibiya.tw/img/charming/web/cart2.jpg`} alt="" />
           </div>
           <div>
             <p>賣家中心</p>
             <img
-              src={`http://localhost:3000/img/charming/web/mySell_product.jpg`}
+              src={`https://bibiya.tw/img/charming/web/mySell_product.jpg`}
               alt=""
             />
           </div>
@@ -315,47 +279,47 @@ function Charming() {
               {">"}
             </div>
             <img
-              src="http://localhost:3000/img/charming/phone/charming1.png"
+              src="https://bibiya.tw/img/charming/phone/charming1.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming2.png"
+              src="https://bibiya.tw/img/charming/phone/charming2.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming3.png"
+              src="https://bibiya.tw/img/charming/phone/charming3.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming4.png"
+              src="https://bibiya.tw/img/charming/phone/charming4.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming5.png"
+              src="https://bibiya.tw/img/charming/phone/charming5.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming6.png"
+              src="https://bibiya.tw/img/charming/phone/charming6.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming7.png"
+              src="https://bibiya.tw/img/charming/phone/charming7.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming8.png"
+              src="https://bibiya.tw/img/charming/phone/charming8.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming9.png"
+              src="https://bibiya.tw/img/charming/phone/charming9.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming10.png"
+              src="https://bibiya.tw/img/charming/phone/charming10.webp"
               alt=""
             />
             <img
-              src="http://localhost:3000/img/charming/phone/charming11.png"
+              src="https://bibiya.tw/img/charming/phone/charming11.webp"
               alt=""
             />
           </div>
@@ -371,7 +335,7 @@ function Charming() {
           <p>
             我們使用css-module解決了這個問題。css-module會將每一個className在輸出時轉為『JS檔案名稱_class__動態生成一段隨機碼』，如此在className的命名上就無須瞻前顧後察看是否與伙伴衝突。另外我們也將會全域影響的CSS和通用樣式統一寫在app.module.css裡，節省了後續維護的時間。
           </p>
-          <img src="http://localhost:3000/img/charming/JSS.webp" alt="" />
+          <img src="https://bibiya.tw/img/charming/JSS.webp" alt="" />
         </div>
       </div>
       <div id="dataPicture" className={`${style.issue} ${style.dataPicture}`}>
@@ -384,10 +348,7 @@ function Charming() {
             解決辦法是將照片放在react的public資料夾，再用網址的方式引入圖片。
             Charming裡的產品圖片在資料庫是用「檔案名稱」來儲存，並以空白鍵分隔同一筆資料裡的多張圖片，輸出到前端再以「空白鍵」作為字串切割的依據，再用require的方式把照片引入，但在圖片的src中require帶有變數的圖片檔案會在讀取不到，因此後來改用網頁引用的方式，不用require的方式才讀取成功。
           </p>
-          <img
-            src="http://localhost:3000/img/charming/dataPicture.webp"
-            alt=""
-          />
+          <img src="https://bibiya.tw/img/charming/dataPicture.webp" alt="" />
         </div>
       </div>
       <div id="dateLine" className={`${style.issue} ${style.cssIssue}`}>

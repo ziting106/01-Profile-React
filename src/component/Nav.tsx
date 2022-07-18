@@ -24,7 +24,7 @@ function Nav() {
       <nav>
         <div className={style.logoName}>
           <Link to={`/`}>
-            <img src={`http://localhost:3000/img/appleLogo.gif`} />
+            <img src={`https://bibiya.tw/img/appleLogo.gif`} />
           </Link>
           <a
             href="/"

@@ -6,7 +6,7 @@ function MomBaby() {
     <div>
       <div className={style.momBaby}>
         <p>This page is being maintained...</p>
-        <img src="http://localhost:3000/img/Join.webp" alt="" />
+        <img src="https://bibiya.tw/img/Join.webp" alt="" />
       </div>
     </div>
   );

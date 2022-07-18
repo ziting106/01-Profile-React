@@ -51,19 +51,17 @@ function MainPage() {
           </div>
         </div>
         <div className={style.seeMore} data-aos="fade" data-aos-duration="1000">
-          <Link to={`/charming`}>
+          <a href="/charming">
             <button>看更多 →</button>
-          </Link>
+          </a>
         </div>
       </div>
 
       <div className={style.if}>
         <div data-aos="slide-up" data-aos-duration="1000">
           <hgroup>
-            <Link to={`/self-reliance`}>
-              <p>02 - Self-Reliance 難民自立救助APP</p>
-              <p>2017/01 - 2017/06</p>
-            </Link>
+            <p>02 - Self-Reliance 難民自立救助APP</p>
+            <p>2017/01 - 2017/06</p>
           </hgroup>
           <div className={style.ifImg}>
             <p>
@@ -79,18 +77,16 @@ function MainPage() {
           </div>
         </div>
         <div className={style.seeMore} data-aos="fade" data-aos-duration="1000">
-          <Link to={`/self-reliance`}>
+          <a href="/self-reliance">
             <button>看更多 →</button>
-          </Link>
+          </a>
         </div>
       </div>
       <div className={style.momBaby}>
         <div data-aos="slide-up" data-aos-duration="1000">
           <hgroup>
-            <Link to={`/mom&baby`}>
-              <p>03 - Mom＆Baby 嬰兒床邊床</p>
-              <p>2017/12 - 2018/06</p>
-            </Link>
+            <p>03 - Mom＆Baby 嬰兒床邊床</p>
+            <p>2017/12 - 2018/06</p>
           </hgroup>
           <div className={style.videoCharming}>
             <p>
@@ -110,9 +106,9 @@ function MainPage() {
             data-aos="fade"
             data-aos-duration="1000"
           >
-            <Link to={`/mom&baby`}>
+            <a href="/mom&baby">
               <button>看更多 →</button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
