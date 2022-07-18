@@ -99,6 +99,17 @@
   margin: 10px 10px;
 }
 
+.animation {
+  font-weight: bold;
+  font-size: var(--heading1);
+  color: var(--green1);
+  text-shadow: 0px 0px 10px #fff;
+  z-index: 10;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+}
+
 .colorlass {
   position: absolute;
   top: 0%;
@@ -141,6 +152,9 @@
   background-color: var(--charming);
   padding: 5% 0;
   text-align: center;
+}
+.styleGuide figure {
+  position: relative;
 }
 
 .styleGuideImg {
@@ -330,5 +344,18 @@
   }
   .challenge > div {
     width: 100%;
+  }
+  .issue {
+    flex-direction: column;
+  }
+  .cssIssue {
+    background: rgb(53, 53, 53);
+  }
+  .dataPicture {
+    color: var(--gray2);
+    background: var(--charming);
+  }
+  .dataPicture img {
+    background-color: rgb(45, 45, 45);
   }
 }

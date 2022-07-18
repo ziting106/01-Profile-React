@@ -3,6 +3,7 @@ import style from "../css/Charming.module.css";
 import RightFixBar from "../component/RightFixBar";
 import { stdout } from "process";
 import AOS from "aos";
+import "animate.css";
 import "aos/dist/aos.css";
 AOS.init();
 
@@ -162,6 +163,11 @@ function Charming() {
             <p></p>
           </div>
           <div className={style.styleGuideImg}>
+            <div
+              className={`${style.animation} animate__animated animate__tada animate__slow animate__infinite`}
+            >
+              {">"}
+            </div>
             <img
               src="http://localhost:3000/img/charming/styleGuide1.webp"
               alt=""
@@ -293,6 +299,11 @@ function Charming() {
         </div>
         <div className={style.phoneImg}>
           <div className={style.charmingFImg}>
+            <div
+              className={`${style.animation} animate__animated animate__tada animate__slow animate__infinite`}
+            >
+              {">"}
+            </div>
             <img
               src="http://localhost:3000/img/charming/phone/charming1.png"
               alt=""
