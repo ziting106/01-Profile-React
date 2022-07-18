@@ -2,6 +2,7 @@
   font-size: var(--heading3);
   color: var(--green1);
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .issue div p, .text p, .backgroundColor p, .concept p, .challenge {
@@ -43,7 +44,6 @@
   width: 40%;
 }
 .challenge > ul {
-  margin: 50px 0px;
   list-style-type: none;
   counter-reset: li;
 }
@@ -263,8 +263,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .project p {
+    margin-right: 20px;
+  }
   .issue hgroup {
-    width: 30%;
     margin: 0%;
     font-size: var(--heading5);
   }
@@ -272,8 +274,7 @@
     font-size: var(--heading5);
   }
   .issue div {
-    margin: 0 0% 0 3%;
-    width: 50%;
+    margin: 0 0 0 3%;
   }
   .cssIssue {
     background: linear-gradient(90deg, var(--charming) 30%, transparent 30%) center/100% 100%, rgb(53, 53, 53);
@@ -287,29 +288,34 @@
   .project {
     display: none;
   }
+  .horizontalImg {
+    width: 100%;
+  }
   .challenge, .concept, .backgroundColor, .wireframe {
     padding: 10% 0px;
     translate: 0.5s;
   }
   .challenge h1, .concept h1, .backgroundColor h1, .text h1 {
     font-size: calc(var(--heading3) - 4px);
-    font-weight: 500;
   }
   .challenge, .concept p, .backgroundColor p, .text p, .issue div p {
     font-size: var(--heading4);
     line-height: 35px;
+  }
+  .phoneImg img, .styleGuideImg img, .prototypeImg img, .issue img {
+    padding: 0px;
+    border-radius: 10px;
   }
   .challenge > div {
     margin: 0 40px 0 0;
     width: 100%;
   }
   .challenge > ul {
-    margin: 0px;
     width: 100%;
   }
   .backgroundColor {
     align-items: flex-start;
-    padding: 100px 20px;
+    padding: 15% 20px;
   }
   .backgroundColor .backgroundColorText {
     width: 100%;
@@ -323,30 +329,55 @@
   .concept {
     flex-direction: column;
   }
+  .concept img {
+    margin-top: 8%;
+  }
   .referTo {
     padding-right: 0px;
     padding-bottom: 10%;
   }
+  .issue {
+    flex-direction: column;
+    padding: 15% 30px;
+  }
   .issue hgroup {
-    width: 30%;
+    width: 100%;
     margin: 0%;
-    font-size: var(--heading5);
+    white-space: unset;
+    font-size: var(--heading3);
+    color: var(--yellow2);
+    line-height: 120px;
   }
   .issue hgroup p:first-child {
-    font-size: var(--heading5);
+    line-height: 40px;
+    font-size: var(--heading3);
   }
   .issue div {
-    margin: 0 5% 0 10%;
+    margin: 0px;
     width: 100%;
+  }
+  .prototype {
+    padding: 10% 0;
+  }
+  .phoneImg img {
+    width: 30%;
+  }
+  .cssIssue {
+    background: rgb(53, 53, 53);
+  }
+  .dataPicture {
+    background: var(--charming);
+  }
+  .styleGuideImg img {
+    width: 40%;
   }
 }
 @media screen and (max-width: 500px) {
   .challenge, .concept, .backgroundColor, .wireframe {
     flex-direction: column;
   }
-  .phoneImg img, .styleGuideImg img, .prototypeImg img, .issue img {
-    padding: 0px;
-    border-radius: 10px;
+  .challenge h1, .concept h1, .backgroundColor h1, .text h1 {
+    text-align: center;
   }
   .challenge, .concept p, .backgroundColor p, .text p, .issue div p {
     font-size: var(--heading5);
@@ -355,31 +386,26 @@
   .challenge > div {
     width: 100%;
   }
+  .challenge ul {
+    text-align: center;
+  }
   .challenge ul h1 {
     margin-top: 15%;
   }
   .issue {
     flex-direction: column;
-    padding: 15% 15px;
+    padding: 15% 30px;
   }
   .issue hgroup {
     width: 100%;
+    margin: 0%;
     font-size: var(--heading4);
-    line-height: 40px;
-    white-space: unset;
     color: var(--yellow2);
+    line-height: 50px;
   }
   .issue hgroup p:first-child {
+    line-height: 40px;
     font-size: var(--heading4);
-  }
-  .issue div {
-    margin: 0%;
-  }
-  .cssIssue {
-    background: rgb(53, 53, 53);
-  }
-  .dataPicture {
-    background: var(--charming);
   }
   .prototype {
     padding: 15% 0;
@@ -391,10 +417,17 @@
     font-size: var(--heading5);
   }
   .phoneImg img {
-    width: 90%;
+    width: 70%;
+  }
+  .wireframe img {
+    margin: 0px;
+    margin-top: 8%;
+    width: 100%;
   }
   .verticalImg {
     display: block;
+    margin: 0 auto;
+    width: 80%;
   }
   .horizontalImg {
     display: none;

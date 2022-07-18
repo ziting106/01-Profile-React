@@ -82,7 +82,7 @@ body{
   }
 }
 @media screen and (max-width:780px) {
-  section {
+  section,figure{
     margin: 30px;
   }
   :root{
@@ -94,7 +94,7 @@ body{
   }
 }
 @media screen and (max-width:500px){
-  section{
+  section,figure{
     margin: 15px;
   }
   :root{
@@ -103,5 +103,8 @@ body{
     --heading2: 42px;
     --heading3: 26px;
     --heading4: 18px;
+  }
+  .content{
+    min-height: calc(100vh - 165px);
   }
 }

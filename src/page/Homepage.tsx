@@ -71,7 +71,7 @@ function MainPage() {
             </p>
             <div>
               <img
-                src={`http://localhost:3000/img/2022-homepage/design-talent-award.jpg`}
+                src={`http://localhost:3000/img/2022-homepage/self-reliance.jpg`}
                 alt=""
               />
               <p>IF Design Talent Award</p>

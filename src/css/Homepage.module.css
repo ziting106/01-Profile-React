@@ -42,7 +42,7 @@
 .mainpage-header hgroup p {
   font-size: var(--heading4);
   color: var(--gray2);
-  line-height: 30px;
+  line-height: 40px;
 }
 .mainpage-header hgroup img {
   width: 100px;
@@ -153,6 +153,9 @@
   }
   .mainpage-header hgroup p:first-child {
     font-size: var(--heading3);
+  }
+  .mainpage-header hgroup p {
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 441px) {

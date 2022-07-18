@@ -105,3 +105,8 @@
     font-size: var(--heading5);
   }
 }
+@media screen and (max-width: 345px) {
+  .logoName a:last-child {
+    display: none;
+  }
+}

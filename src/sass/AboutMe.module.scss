@@ -35,8 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // text-align: center;
-
+    transition: .5s;
     p{
         font-size: var(--heading2);
         color: var(--green1);
@@ -84,6 +83,9 @@
         padding-left: 50px;
     }
 }
+.mypic:last-child{
+    margin-bottom: 20%;
+}
 
 @media screen and (max-width:1280px){
     // .aboutMe{
@@ -97,6 +99,9 @@
     .mypic{
         font-size: var(--heading5);
         line-height: 30px;
+    }
+    .myPicture{
+        background-size: 250px;
     }
 }
 

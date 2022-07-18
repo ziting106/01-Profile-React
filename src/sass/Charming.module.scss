@@ -2,6 +2,7 @@
     font-size: var(--heading3);
     color: var(--green1);
     margin-bottom: 20px;
+    font-weight: 500;
 }
 %text{
     font-size: var(--heading5);
@@ -44,7 +45,6 @@
         width: 40%;
     }
     > ul{
-        margin: 50px 0px;
         list-style-type: none;
         counter-reset: li;
     }
@@ -109,22 +109,6 @@
         margin: 10px 10px;
     }
 }
-
-// .charmingFImg::after{
-//     content: '>';
-//     font-weight:bold;
-//     font-size: var(--heading1);
-//     color: var(--green1);
-//     animation: pulse;
-//     animation-duration: 2s;
-//     animation-timing-function:linear;
-//     animation-iteration-count: infinite;
-//     text-shadow: 0px 0px 10px #fff;
-//     z-index: 10;
-//     position: absolute;
-//     top: 45%;
-//     right: 5%;
-// }
 .animation{
     font-weight:bold;
     font-size: var(--heading1);
@@ -144,7 +128,6 @@
     height: 100%;
     background: linear-gradient(to right, rgba(0,0,0,0) , rgb(0, 0, 0,.2));
 }
-
 // 底色為charming的區塊＝>概念發想、需求者環境評估
 .backgroundColor{
     @extend %flex;
@@ -217,9 +200,6 @@
     background-color: var(--charming);
 }
 .prototypeImg{
-    // display: flex;
-    // height: 100vh;
-    // overflow: scroll;
     img{
         @extend %picture;
         width: 70%;
@@ -260,9 +240,7 @@
     display: flex;
     padding:6% 0  11% 0;
     justify-content: flex-start;
-    // align-items: center;
     //charlenge1 背景
-   
     hgroup{
         width: 30%;
         margin: 0% 5%;
@@ -308,9 +286,13 @@
 }
 @media screen and (max-width:1024px){
     // challenge
+    .project{
+        p{
+            margin-right: 20px;
+        }
+    }
     .issue{
         hgroup{
-            width: 30%;
             margin: 0%;
             font-size: var(--heading5);
             p:first-child{
@@ -318,8 +300,7 @@
             }
         }
         div{
-            margin:0 0% 0 3%;
-            width: 50%;
+            margin:0 0 0 3%;
         }
     }
     .cssIssue{
@@ -334,17 +315,23 @@
     .project{
         display: none;
     }
+    .horizontalImg{
+        width: 100%;
+    }
     %flex{
         padding:10% 0px;
         translate: .5s;
     }
     %title{
         font-size:calc(var(--heading3) - 4px);
-        font-weight: 500;
     }
     %text{
         font-size: var(--heading4);
         line-height: 35px;
+    }
+    %picture{
+        padding: 0px;
+        border-radius: 10px;
     }
     .challenge{
         > div{
@@ -352,13 +339,13 @@
             width: 100%;
         }
         > ul{
-            margin: 0px;
             width: 100%;
         }
     }
     .backgroundColor{
         align-items:flex-start;
-        padding:100px 20px;
+        padding:15% 20px;
+        
     }
     .backgroundColor .backgroundColorText {
         width: 100%;
@@ -371,23 +358,51 @@
     }
     .concept{
         flex-direction: column;
+        img{
+            margin-top: 8%;
+        }
     }
     .referTo{
         padding-right: 0px;
         padding-bottom: 10%;
     }
     .issue{
+        flex-direction: column;
+        padding:15% 30px;
         hgroup{
-            width: 30%;
+            width: 100%;
             margin: 0%;
-            font-size: var(--heading5);
+            white-space:unset;
+            font-size: var(--heading3);
+            color: var(--yellow2);
+            line-height:120px;
             p:first-child{
-                font-size: var(--heading5);
+                line-height:40px;
+                font-size: var(--heading3);
             }
         }
         div{
-            margin:0 5% 0 10%;
+            margin:0px;
             width: 100%;
+        }
+    }
+    .prototype{
+        padding: 10% 0;
+    }
+    .phoneImg{
+        img{
+            width: 30%;
+        }
+    }
+    .cssIssue{
+        background: rgb(53, 53, 53);
+    }
+    .dataPicture{
+        background:var(--charming);
+    }
+    .styleGuideImg{
+        img{
+            width: 40%;
         }
     }
 }
@@ -395,9 +410,8 @@
     %flex{
         flex-direction: column;
     }
-    %picture{
-        padding: 0px;
-        border-radius: 10px;
+    %title{
+        text-align: center;
     }
     %text{
         font-size: var(--heading5);
@@ -411,32 +425,23 @@
             h1{
                 margin-top: 15%;
             }
+            text-align: center;
         }
-       
     }
     .issue{
         flex-direction: column;
-        padding:15% 15px;
-    hgroup{
-        width: 100%;
-        font-size: var(--heading4);
-        line-height:40px;
-        white-space:unset;
-        color: var(--yellow2);
-        p:first-child{
+        padding:15% 30px;
+        hgroup{
+            width: 100%;
+            margin: 0%;
             font-size: var(--heading4);
+            color: var(--yellow2);
+            line-height:50px;
+            p:first-child{
+                line-height:40px;
+                font-size: var(--heading4);
+            }
         }
-    }
-    div{
-        margin: 0%;
-    }
-    }
-    .cssIssue{
-        background: rgb(53, 53, 53);
-    }
-
-    .dataPicture{
-        background:var(--charming);
     }
     .prototype{
         padding: 15% 0;
@@ -452,11 +457,20 @@
     // RWD部分
     .phoneImg{
         img{
-            width: 90%;
+            width: 70%;
+        }
+    }
+    .wireframe{
+        img{
+            margin: 0px;
+            margin-top: 8%;
+            width: 100%;
         }
     }
     .verticalImg{
         display: block;
+        margin: 0 auto;
+        width: 80%;
     }
     .horizontalImg{
         display: none;

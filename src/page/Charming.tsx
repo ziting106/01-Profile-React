@@ -8,9 +8,9 @@ import "aos/dist/aos.css";
 AOS.init();
 
 function Charming() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div>
@@ -103,7 +103,11 @@ function Charming() {
         data-aos-duration="1000"
       >
         <div className={style.backgroundColorImg}>
-          <img src="http://localhost:3000/img/charming/referTo.webp" alt="" />
+          <img
+            src="http://localhost:3000/img/charming/referTo.webp"
+            alt=""
+            className={style.horizontalImg}
+          />
         </div>
         <div className={style.backgroundColorText}>
           <h1>市場調查</h1>
@@ -365,7 +369,7 @@ function Charming() {
         </hgroup>
         <div data-aos="fade" data-aos-duration="1000">
           <p>
-            我們使用css-module和JSS引入法解決了這個問題。css-module會將每一個className在輸出時轉為『JS檔案名稱_class__動態生成一段隨機碼』，如此在className的命名上就無須瞻前顧後察看是否與伙伴衝突。另外我們也將會全域影響的CSS和通用樣式統一寫在app.module.css裡，節省了後續維護的時間。
+            我們使用css-module解決了這個問題。css-module會將每一個className在輸出時轉為『JS檔案名稱_class__動態生成一段隨機碼』，如此在className的命名上就無須瞻前顧後察看是否與伙伴衝突。另外我們也將會全域影響的CSS和通用樣式統一寫在app.module.css裡，節省了後續維護的時間。
           </p>
           <img src="http://localhost:3000/img/charming/JSS.webp" alt="" />
         </div>
