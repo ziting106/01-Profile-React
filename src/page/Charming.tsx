@@ -65,6 +65,12 @@ function Charming() {
           <img
             src="http://localhost:3000/img/charming/designFloor.webp"
             alt=""
+            className={style.horizontalImg}
+          />
+          <img
+            src="http://localhost:3000/img/charming/designFloor_st.webp"
+            alt=""
+            className={style.verticalImg}
           />
         </figure>
       </div>
@@ -371,7 +377,7 @@ function Charming() {
         </hgroup>
         <div data-aos="fade" data-aos-duration="1000">
           <p>
-            解決辦法是將照片放在react的public資料夾，再用http://localhost:3000...的方式引入圖片。
+            解決辦法是將照片放在react的public資料夾，再用網址的方式引入圖片。
             Charming裡的產品圖片在資料庫是用「檔案名稱」來儲存，並以空白鍵分隔同一筆資料裡的多張圖片，輸出到前端再以「空白鍵」作為字串切割的依據，再用require的方式把照片引入，但在圖片的src中require帶有變數的圖片檔案會在讀取不到，因此後來改用網頁引用的方式，不用require的方式才讀取成功。
           </p>
           <img
