@@ -51,9 +51,9 @@ function MainPage() {
           </div>
         </div>
         <div className={style.seeMore} data-aos="fade" data-aos-duration="1000">
-          <a href="/charming">
+          <Link to={`/charming`}>
             <button>看更多 →</button>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -69,7 +69,7 @@ function MainPage() {
             </p>
             <div>
               <img
-                src={`http://localhost:3000/img/2022-homepage/self-reliance.jpg`}
+                src={`https://bibiya.tw/img/2022-homepage/self-reliance.jpg`}
                 alt=""
               />
               <p>IF Design Talent Award</p>
@@ -77,9 +77,9 @@ function MainPage() {
           </div>
         </div>
         <div className={style.seeMore} data-aos="fade" data-aos-duration="1000">
-          <a href="/self-reliance">
+          <Link to={`/self-reliance`}>
             <button>看更多 →</button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className={style.momBaby}>
@@ -106,9 +106,9 @@ function MainPage() {
             data-aos="fade"
             data-aos-duration="1000"
           >
-            <a href="/mom&baby">
+            <Link to={`/mom&baby`}>
               <button>看更多 →</button>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
