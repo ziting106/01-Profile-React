@@ -226,7 +226,6 @@
   font-size: var(--heading3);
   line-height: 50px;
   text-align: center;
-  white-space: nowrap;
 }
 .issue hgroup p:first-child {
   font-size: var(--heading4);

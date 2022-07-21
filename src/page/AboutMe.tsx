@@ -32,8 +32,8 @@ function AboutMe() {
         <img src="https://bibiya.tw/img/myPic/mypic6.gif" alt="" />
         <div>
           <p>
-            2022年6月從資展國際前端班畢業，我是一名產品設計師、前端程式初學者，2022年6月從資展國際前端班畢業，接受了588個小時的前端課程訓練，除了HTML、CSS、JavaScript外，也學習了PHP、React、Reasrful
-            API、Node.js和MySQL。能以React框架獨立切版出無須後端資料庫的網站，並製作RWD響應式網站。
+            2022年6月我剛從資展國際前端班畢業，接受了588個小時的前端課程訓練，是一名產品設計師、前端程式初學者，除了HTML、CSS和JavaScript外，也概略的學習了PHP、React、Reasrful
+            API、Node.js和MySQL。這個作品集就是以React框架獨立切版出來的，有RWD功能。
           </p>
         </div>
       </div>
@@ -41,7 +41,7 @@ function AboutMe() {
         <img src="https://bibiya.tw/img/myPic/mypic7.jpg" alt="" />
         <div>
           <p>
-            在2019~2021的一年半裡，我短暫的成為了廚師，遇到了一群很棒的伙伴和一位不斷推動我進步的主廚，每天都在SPRINT，每天都在學習，每天都需要與伙伴們密集的溝通、無間的合作，在廚房，『做』比『想』重要的多，溝通』與『人和』是職場幸福度的核心。
+            在2019~2021的一年半裡，我成為了廚師，遇到了一群很棒的伙伴和一位不斷推動我進步的主廚，每天都在SPRINT，我學會了如何與伙伴們無間的合作，能夠把工作流程做的流暢順遂是我最開心的事。
           </p>
         </div>
       </div>
