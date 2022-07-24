@@ -5,6 +5,7 @@ import { stdout } from "process";
 import AOS from "aos";
 import "animate.css";
 import "aos/dist/aos.css";
+
 AOS.init();
 
 function Charming() {
@@ -139,7 +140,7 @@ function Charming() {
         data-aos-duration="1000"
       >
         <figure>
-          <img src="https://bibiya.tw/img/charming/sideMap.webp" alt="" />
+          <img src="https://bibiya.tw/img/charming/sidemap.webp" alt="" />
         </figure>
       </div>
       {/* wireframe */}
