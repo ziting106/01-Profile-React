@@ -21,7 +21,7 @@ function Footer() {
         <a href="https://www.facebook.com/profile.php?id=100001521969089">
           <FaFacebook />
         </a>
-        <a href="https://www.instagram.com/angelica20220630/">
+        <a href="https://www.instagram.com/angelicacoding/">
           <FaInstagram />
         </a>
         <a href="https://github.com/ziting106">
