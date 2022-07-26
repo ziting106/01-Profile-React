@@ -9,6 +9,7 @@ import AboutMe from "./page/AboutMe";
 import Charming from "./page/Charming";
 import SelfReliance from "./page/SelfReliance";
 import MomBaby from "./page/MomBaby";
+import JavaScript from "./page/JavaScript";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<AboutMe />} />
           <Route path="/charming" element={<Charming />} />
+          <Route path="/javaScript" element={<JavaScript />} />
           <Route path="/self-reliance" element={<SelfReliance />} />
           <Route path="/mom&baby" element={<MomBaby />} />
         </Routes>
