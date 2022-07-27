@@ -30,5 +30,13 @@
         "workspaceRoot": "/Users/zitingliu/Documents/00-GitHub/profile/myprofile",
         "workspacePath": "node_modules/lazy-line-painter/webpack.config.js",
         "id": "jOEifnQDmeBtVrbF"
+    },
+    {
+        "type": "File",
+        "name": "/Users/zitingliu/Documents/00-GitHub/profile/myprofile/node_modules/react-scripts/config/webpackDevServer.config.js",
+        "parent_id": null,
+        "workspaceRoot": "/Users/zitingliu/Documents/00-GitHub/profile/myprofile",
+        "workspacePath": "node_modules/react-scripts/config/webpackDevServer.config.js",
+        "id": "H5GAh8q7Eb2FP1tN"
     }
 ]
