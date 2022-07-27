@@ -59,8 +59,8 @@ function Nav() {
             設計專案
           </Link>
           <Link
-            to={`/javaScrpt`}
-            className={pageName == "/javaScrpt" ? `${style.itemactive}` : ""}
+            to={`/javaScript`}
+            className={pageName == "/javaScript" ? `${style.itemactive}` : ""}
           >
             JavaScript
           </Link>

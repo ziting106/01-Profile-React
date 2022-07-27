@@ -1,0 +1,12 @@
+.linkcolor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    text-align: center;
+    a{ 
+        width: 80px;
+        border: 2px solid var(--yellow2);
+        padding: 80px 50px;
+    }
+}
