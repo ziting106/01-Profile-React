@@ -58,12 +58,12 @@ function Nav() {
           >
             設計專案
           </Link>
-          <Link
+          {/* <Link
             to={`/javaScript`}
             className={pageName == "/javaScript" ? `${style.itemactive}` : ""}
           >
             JavaScript
-          </Link>
+          </Link> */}
           <Link
             id="apple"
             to={`/about`}

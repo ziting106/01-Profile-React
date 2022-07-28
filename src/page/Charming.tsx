@@ -369,7 +369,7 @@ function Charming() {
           </a>
         </div>
       </div>
-      {/* <RightFixBar /> */}
+      <RightFixBar />
     </>
   );
 }
