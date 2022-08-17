@@ -14,9 +14,9 @@ function Charming() {
   }, []);
   return (
     <>
-      <div>
+      <header>
         <img src="https://bibiya.tw/img/charming.png" alt="" />
-      </div>
+      </header>
       <section>
         <hgroup className={style.project}>
           <h1>PROJECT：</h1>

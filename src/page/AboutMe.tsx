@@ -25,14 +25,14 @@ function AboutMe() {
       <div className={style.myPicture}>
         <p>&#x1F44B; Hi! 我是劉芷廷</p>
         <p>Product Designer</p>
-        <p>UI/UX Designer</p>
+        <p>Front-end Developer</p>
       </div>
 
       <div className={style.mypic} data-aos="fade-up" data-aos-duration="1000">
         <img src="https://bibiya.tw/img/myPic/mypic6.gif" alt="" />
         <div>
           <p>
-            2022年6月我剛從資展國際前端班畢業，接受了588個小時的前端課程訓練，最擅長HTML、CSS和JavaScript，也概略的學習了PHP、React、Node.js和MySQL。
+            2022年6月我剛從資展國際前端班畢業，接受了588個小時的前端課程訓練，最擅長HTML、CSS、Sass和JavaScript，也概略的學習了Git、MySQL、Typescript、React、Node.js和PHP。
           </p>
         </div>
       </div>
