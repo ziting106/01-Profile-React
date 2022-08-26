@@ -23,7 +23,7 @@ function AboutMe() {
   return (
     <section className={style.aboutMe} id="apple">
       <div className={style.myPicture}>
-        <p>&#x1F44B; Hi! 我是劉芷廷</p>
+        <p> Hi! 我是Angelica &#x1F44B;</p>
         <p>Product Designer</p>
         <p>Front-end Developer</p>
       </div>

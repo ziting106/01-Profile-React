@@ -17,7 +17,7 @@ function MainPage() {
       <header className={style["mainpage-header"]}>
         <hgroup>
           <p>歡迎參觀我的作品集</p>
-          <p>&#x1F44B; Hi! 我是劉芷廷</p>
+          <p> Hi! 我是Angelica &#x1F44B;</p>
           <p>產品設計師</p>
           <p>前端工程師</p>
           <BsArrowDown className={style.icon} />
