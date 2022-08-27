@@ -8,14 +8,11 @@
   line-height: 30px;
   border-right: 1px solid var(--gray3);
 }
-.rightFixBar a {
+.rightFixBar button {
   transition: 0.2s;
 }
-.rightFixBar a::after {
+.rightFixBar button::after {
   content: " -";
-}
-.rightFixBar a:hover {
-  font-size: large;
 }
 
 .phoneImg[aria-current]:not([aria-current=""]):not([aria-current=false]) {
@@ -30,6 +27,20 @@
   color: var(--green1);
   font-weight: bold;
   font-size: large;
+}
+
+.btn {
+  color: var(--green2);
+  border: 0px;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover {
+  color: var(--green1);
+  font-weight: bold;
+  font-size: 23px;
 }
 
 @media screen and (max-width: 1024px) {

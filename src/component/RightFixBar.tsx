@@ -1,196 +1,91 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { isConstructorDeclaration } from "typescript";
 import style from "../css/RightFixBar.module.css";
 
 function RightFixBar() {
-  const location = useLocation();
-  let hash = location.hash;
+  //讀取Charming.tsx裡的ID、對應位置
+  const challenge = document.querySelector("#challenge");
+  const designFlow = document.querySelector("#designFlow");
+  const concept = document.querySelector("#concept");
+  const marketingResearch = document.querySelector("#marketingResearch");
+  const referTo = document.querySelector("#referTo");
+  const sidemap = document.querySelector("#sidemap");
+  const wireframe = document.querySelector("#wireframe");
+  const styleGuide = document.querySelector("#styleGuide");
+  const mockup = document.querySelector("#mockup");
+  const prototype = document.querySelector("#prototype");
+  const phoneRWD = document.querySelector("#phoneRWD");
+  const cssIssue = document.querySelector("#cssIssue");
+  const dataPicture = document.querySelector("#dataPicture");
+  const dateLine = document.querySelector("#dateLine");
 
-  // 如何消除URL受到跳轉連結影響的問題？
-  //   anchorPoint(idName){
-  //   document.querySelector(idName).scrollIntoView(true);
-  // }
-
-  // const topH1 = document.getElementById("topH1");
-  // topH1.scrollIntoView(true);
-  // const tobtmH1 = document.getElementById("tobtmH1");
-  // tobtmH1.scrollIntoView(false);
+  //點擊top置頂
+  const scrollBtn = () => window.scrollTo(0, 0);
+  //移至challenge
+  const toChallenge = () => challenge?.scrollIntoView();
+  const toDesignFlow = () => designFlow?.scrollIntoView();
+  const toConcept = () => concept?.scrollIntoView();
+  const toMarketingResearch = () => marketingResearch?.scrollIntoView();
+  const toReferTo = () => referTo?.scrollIntoView();
+  const toSitemap = () => sidemap?.scrollIntoView();
+  const toWireframe = () => wireframe?.scrollIntoView();
+  const toStyleGuide = () => styleGuide?.scrollIntoView();
+  const toMockup = () => mockup?.scrollIntoView();
+  const toPrototype = () => prototype?.scrollIntoView();
+  const toPhoneRWD = () => phoneRWD?.scrollIntoView();
+  const toCssIssue = () => cssIssue?.scrollIntoView();
+  const toDataPicture = () => dataPicture?.scrollIntoView();
+  const toDateLine = () => dateLine?.scrollIntoView();
 
   return (
-    <div>
-      <ul className={style.rightFixBar}>
-        <li>
-          <a
-            href="#top"
-            className={
-              hash == "#top" ? `${style.changeColor}` : `${style.textcolor}`
-            }
-          >
-            Top
-          </a>
-        </li>
-        <li>
-          <a
-            href="#challenge"
-            className={
-              hash == "#challenge"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Project Vision
-          </a>
-        </li>
-        <li>
-          <a
-            href="#designFlow"
-            className={
-              hash == "#designFlow"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Design Flow
-          </a>
-        </li>
-        <li>
-          <a
-            href="#concept"
-            className={
-              hash == "#concept" ? `${style.changeColor}` : `${style.textcolor}`
-            }
-          >
-            Target
-          </a>
-        </li>
-        <li>
-          <a
-            href="#marketingResearch"
-            className={
-              hash == "#marketingResearch"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Marketing Research
-          </a>
-        </li>
-        <li>
-          <a
-            href="#referTo"
-            className={
-              hash == "#referTo" ? `${style.changeColor}` : `${style.textcolor}`
-            }
-          >
-            需求者環境評估
-          </a>
-        </li>
-        <li>
-          <a
-            href="#sidemap"
-            className={
-              hash == "#sidemap" ? `${style.changeColor}` : `${style.textcolor}`
-            }
-          >
-            Side Map
-          </a>
-        </li>
-        <li>
-          <a
-            href="#wireframe"
-            className={
-              hash == "#wireframe"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Wireframe
-          </a>
-        </li>
-        <li>
-          <a
-            href="#styleGuide"
-            className={
-              hash == "#styleGuide"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Style Guide
-          </a>
-        </li>
-        <li>
-          <a
-            href="#mockup"
-            className={
-              hash == "#mockup" ? `${style.changeColor}` : `${style.textcolor}`
-            }
-          >
-            Mockup
-          </a>
-        </li>
-        <li>
-          <a
-            href="#prototype"
-            className={
-              hash == "#prototype"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Prototype
-          </a>
-        </li>
-        <li>
-          <a
-            href="#phoneRWD"
-            className={
-              hash == "#phoneRWD"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            RWD
-          </a>
-        </li>
-        <li>
-          <a
-            href="#cssIssue"
-            className={
-              hash == "#cssIssue"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Challenge 1
-          </a>
-        </li>
-        <li>
-          <a
-            href="#dataPicture"
-            className={
-              hash == "#dataPicture"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Challenge 2
-          </a>
-        </li>
-        <li>
-          <a
-            href="#dateLine"
-            className={
-              hash == "#dateLine"
-                ? `${style.changeColor}`
-                : `${style.textcolor}`
-            }
-          >
-            Challenge 3
-          </a>
-        </li>
-      </ul>
+    <div className={style.rightFixBar}>
+      <button className={style.btn} onClick={scrollBtn}>
+        TOP
+      </button>
+      <button className={style.btn} onClick={toChallenge}>
+        Project Vision
+      </button>
+      <button className={style.btn} onClick={toDesignFlow}>
+        Design Flow
+      </button>
+      <button className={style.btn} onClick={toConcept}>
+        Target
+      </button>
+      <button className={style.btn} onClick={toMarketingResearch}>
+        Marketing Research
+      </button>
+      <button className={style.btn} onClick={toReferTo}>
+        環境評估
+      </button>
+      <button className={style.btn} onClick={toSitemap}>
+        Sitemap
+      </button>
+      <button className={style.btn} onClick={toWireframe}>
+        Wireframe
+      </button>
+      <button className={style.btn} onClick={toStyleGuide}>
+        Style Guide
+      </button>
+      <button className={style.btn} onClick={toMockup}>
+        Mockup
+      </button>
+      <button className={style.btn} onClick={toPrototype}>
+        Prototype
+      </button>
+      <button className={style.btn} onClick={toPhoneRWD}>
+        RWD
+      </button>
+      <button className={style.btn} onClick={toCssIssue}>
+        Challenge 1
+      </button>
+      <button className={style.btn} onClick={toDataPicture}>
+        Challenge 2
+      </button>
+      <button className={style.btn} onClick={toDateLine}>
+        Challenge 3
+      </button>
     </div>
   );
 }
