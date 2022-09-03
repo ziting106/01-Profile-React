@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { isConstructorDeclaration } from "typescript";
@@ -21,9 +21,8 @@ function RightFixBar() {
   const dataPicture = document.querySelector("#dataPicture");
   const dateLine = document.querySelector("#dateLine");
 
-  //點擊top置頂
+  //滾動到位
   const scrollBtn = () => window.scrollTo(0, 0);
-  //移至challenge
   const toChallenge = () => challenge?.scrollIntoView();
   const toDesignFlow = () => designFlow?.scrollIntoView();
   const toConcept = () => concept?.scrollIntoView();
@@ -38,6 +37,20 @@ function RightFixBar() {
   const toCssIssue = () => cssIssue?.scrollIntoView();
   const toDataPicture = () => dataPicture?.scrollIntoView();
   const toDateLine = () => dateLine?.scrollIntoView();
+
+  //滾到點後字體變色
+  const addColor = function (e) {
+    challenge.classList.remove("{style.btn}");
+    challenge.classList.add("{style.changeColor}");
+    // e.forEach((entry) => {
+    //   console.log(entry);
+    // });
+  };
+  const changeColor = new IntersectionObserver(addColor, {
+    root: null,
+    threshold: 0,
+  });
+  changeColor.observe(challenge);
 
   return (
     <div className={style.rightFixBar}>
